@@ -1,0 +1,100 @@
+{
+  "url": "https://saishokucareer.com/admin",
+  "linkCount": 21,
+  "links": [
+    {
+      "text": "ダッシュボード",
+      "href": "https://saishokucareer.com/admin"
+    },
+    {
+      "text": "全 CP スケジュール",
+      "href": "https://saishokucareer.com/admin/schedule"
+    },
+    {
+      "text": "相談者一覧",
+      "href": "https://saishokucareer.com/admin/seekers"
+    },
+    {
+      "text": "全監視チャット",
+      "href": "https://saishokucareer.com/admin/chat"
+    },
+    {
+      "text": "スタッフ管理",
+      "href": "https://saishokucareer.com/admin/members"
+    },
+    {
+      "text": "お知らせ管理",
+      "href": "https://saishokucareer.com/admin/announcements"
+    },
+    {
+      "text": "特典管理",
+      "href": "https://saishokucareer.com/admin/benefits"
+    },
+    {
+      "text": "お問い合わせ",
+      "href": "https://saishokucareer.com/admin/contact-messages"
+    },
+    {
+      "text": "プロフィール",
+      "href": "https://saishokucareer.com/admin/profile"
+    },
+    {
+      "text": "ダッシュボード",
+      "href": "https://saishokucareer.com/cp/dashboard"
+    },
+    {
+      "text": "スケジュール",
+      "href": "https://saishokucareer.com/cp/schedule"
+    },
+    {
+      "text": "プロフィール",
+      "href": "https://saishokucareer.com/cp/profile"
+    },
+    {
+      "text": "担当相談者",
+      "href": "https://saishokucareer.com/cp/users"
+    },
+    {
+      "text": "チャット",
+      "href": "https://saishokucareer.com/cp/chat"
+    },
+    {
+      "text": "設定",
+      "href": "https://saishokucareer.com/cp/settings"
+    },
+    {
+      "text": "全件を見る →",
+      "href": "https://saishokucareer.com/admin/schedule"
+    },
+    {
+      "text": "鈴木遼",
+      "href": "https://saishokucareer.com/admin/seekers/bd84efc7-3458-40d5-bd64-b155314534d8"
+    },
+    {
+      "text": "吉田亘",
+      "href": "https://saishokucareer.com/admin/seekers/30114791-515b-437e-8b65-e997f2280c80"
+    },
+    {
+      "text": "S",
+      "href": "https://saishokucareer.com/admin/seekers/b52e358b-c48f-4f13-a979-013e2d4c9aec"
+    },
+    {
+      "text": "たなかひろき",
+      "href": "https://saishokucareer.com/admin/seekers/25790cde-1241-4ac1-9580-33279610f83e"
+    },
+    {
+      "text": "たなかひろき",
+      "href": "https://saishokucareer.com/admin/seekers/25790cde-1241-4ac1-9580-33279610f83e"
+    }
+  ],
+  "keywordHits": {
+    "キャンセル": 0,
+    "面談": 2,
+    "予約": 2,
+    "相談者": 2,
+    "登録": 0,
+    "完了": 4,
+    "スケジュール": 2,
+    "実施": 0
+  }
+}

@@ -1,26 +1,77 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
+/* =========================================================
+   ブランドカラー
+   - メイン:   ピンク  #F579B1
+   - サブ:     ブルー  #97C8FE
+   - 中間:     パープル #C6A1D8
+   ダークモードは要件外のため未対応（常にライト表示）。
+   ========================================================= */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* ブランド3色 */
+  --color-brand-pink: #f579b1;
+  --color-brand-pink-soft: #fde7f1;
+  --color-brand-blue: #97c8fe;
+  --color-brand-blue-soft: #e8f2ff;
+  --color-brand-purple: #c6a1d8;
+  --color-brand-purple-soft: #f3ebf8;
+
+  /* サイドバー(ネイビー) */
+  --color-navy: #16213e;
+  --color-navy-soft: #223258;
+
+  /* ベース */
+  --color-background: #f6f7fb;
+  --color-surface: #ffffff;
+  --color-foreground: #1f2937;
+  --color-muted: #6b7280;
+  --color-border-subtle: #e9ebf1;
+
+  /* 増減表示(色以外にも記号/アイコンを併用) */
+  --color-positive: #16a34a;
+  --color-negative: #dc2626;
+  --color-neutral: #6b7280;
+
+  /* グラフ7指標カラー = 指定3色(ブルー→パープル→ピンク)の家族で構成。
+     各工程は「ブランド色」と「その濃淡」でペアにして識別性を確保。
+     キャンセルのみ意味上の赤系(損失を表す慣習)。 */
+  --color-metric-lp: #97c8fe; /* ブランド ブルー */
+  --color-metric-line: #4f8df0; /* 濃いブルー */
+  --color-metric-click: #c6a1d8; /* ブランド パープル */
+  --color-metric-register: #9a6bc4; /* 濃いパープル */
+  --color-metric-booked: #f579b1; /* ブランド ピンク */
+  --color-metric-completed: #e24d8f; /* 濃いローズ(ピンク系) */
+  --color-metric-cancelled: #f0736f; /* ソフトレッド(キャンセル=損失) */
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-background);
+  color: var(--color-foreground);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* フォーカスリングは可視性のため消さない(アクセシビリティ) */
+:focus-visible {
+  outline: 2px solid var(--color-brand-pink);
+  outline-offset: 2px;
+}
+
+/* 数値は桁揃え */
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* メイン背景 = 指定3色の"淡い"グラデーション(ブルー→パープル→ピンク)。
+   可読性優先で薄いパステルにし、カード(白)とテキストがはっきり見えるようにする。 */
+.app-canvas {
+  background: linear-gradient(
+    135deg,
+    var(--color-brand-blue-soft) 0%,
+    var(--color-brand-purple-soft) 50%,
+    var(--color-brand-pink-soft) 100%
+  );
+  background-attachment: fixed;
 }

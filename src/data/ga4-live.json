@@ -1,0 +1,8 @@
+{
+  "source": "ga4",
+  "available": false,
+  "note": "GA4未計測（データストリーム未設定）",
+  "generatedAt": null,
+  "latestDate": null,
+  "daily": []
+}

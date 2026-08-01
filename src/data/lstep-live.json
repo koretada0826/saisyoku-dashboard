@@ -1,0 +1,133 @@
+{
+  "source": "lstep",
+  "available": true,
+  "generatedAt": "2026-08-01T06:32:24.766Z",
+  "earliestDate": "2026-07-02",
+  "latestDate": "2026-08-01",
+  "daily": [
+    {
+      "date": "2026-07-02",
+      "lineVisitors": 0
+    },
+    {
+      "date": "2026-07-03",
+      "lineVisitors": 0
+    },
+    {
+      "date": "2026-07-04",
+      "lineVisitors": 0
+    },
+    {
+      "date": "2026-07-05",
+      "lineVisitors": 2
+    },
+    {
+      "date": "2026-07-06",
+      "lineVisitors": 12
+    },
+    {
+      "date": "2026-07-07",
+      "lineVisitors": 4
+    },
+    {
+      "date": "2026-07-08",
+      "lineVisitors": 0
+    },
+    {
+      "date": "2026-07-09",
+      "lineVisitors": 6
+    },
+    {
+      "date": "2026-07-10",
+      "lineVisitors": 3
+    },
+    {
+      "date": "2026-07-11",
+      "lineVisitors": 1
+    },
+    {
+      "date": "2026-07-12",
+      "lineVisitors": 7
+    },
+    {
+      "date": "2026-07-13",
+      "lineVisitors": 10
+    },
+    {
+      "date": "2026-07-14",
+      "lineVisitors": 13
+    },
+    {
+      "date": "2026-07-15",
+      "lineVisitors": 6
+    },
+    {
+      "date": "2026-07-16",
+      "lineVisitors": 7
+    },
+    {
+      "date": "2026-07-17",
+      "lineVisitors": 34
+    },
+    {
+      "date": "2026-07-18",
+      "lineVisitors": 6
+    },
+    {
+      "date": "2026-07-19",
+      "lineVisitors": 4
+    },
+    {
+      "date": "2026-07-20",
+      "lineVisitors": 16
+    },
+    {
+      "date": "2026-07-21",
+      "lineVisitors": 17
+    },
+    {
+      "date": "2026-07-22",
+      "lineVisitors": 23
+    },
+    {
+      "date": "2026-07-23",
+      "lineVisitors": 12
+    },
+    {
+      "date": "2026-07-24",
+      "lineVisitors": 3
+    },
+    {
+      "date": "2026-07-25",
+      "lineVisitors": 3
+    },
+    {
+      "date": "2026-07-26",
+      "lineVisitors": 6
+    },
+    {
+      "date": "2026-07-27",
+      "lineVisitors": 5
+    },
+    {
+      "date": "2026-07-28",
+      "lineVisitors": 8
+    },
+    {
+      "date": "2026-07-29",
+      "lineVisitors": 3
+    },
+    {
+      "date": "2026-07-30",
+      "lineVisitors": 4
+    },
+    {
+      "date": "2026-07-31",
+      "lineVisitors": 3
+    },
+    {
+      "date": "2026-08-01",
+      "lineVisitors": 1
+    }
+  ]
+}

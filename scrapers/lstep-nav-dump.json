@@ -1,0 +1,279 @@
+{
+  "total": 61,
+  "hit": [
+    {
+      "text": "アクション管理",
+      "href": "https://manager.linestep.net/line/action"
+    },
+    {
+      "text": "7月28日 アップデートのお知らせ 詳細はクリックして確認してください。",
+      "href": "https://manual.linestep.net/kiji2718"
+    },
+    {
+      "text": "7月22日 【夏季休業のお知らせ】 いつも弊社サービスをご利用頂きましてありがとうございます。\n誠に勝手ながら、8月10日(月)～8月14日(金)の期間を夏季休業とさせて頂きます。\n※チャットボットサポートの有人チャットは18日(火)10時からとなります。\n\n詳しくはこちらをクリックしてご確認ください。",
+      "href": "https://manager.linestep.net/#"
+    },
+    {
+      "text": "7月21日 アップデートのお知らせ 詳細はクリックして確認してください。",
+      "href": "https://manual.linestep.net/kiji2717"
+    },
+    {
+      "text": "7月14日 【復旧済み】新規で友だち追加された際に、シナリオの「購読開始直後」のメッセージおよび通知が配信されない事象について 新規で友だち追加された際に、シナリオの「購読開始直後」に設定したメッセージが配信されない、または友だち追加時の通知が届かない不具合が発生しておりました。\n\n現在は復旧しております。\n詳細は、クリックしてご確認ください。",
+      "href": "https://manager.linestep.net/#"
+    },
+    {
+      "text": "7月14日 アップデートのお知らせ 詳細はクリックして確認してください。",
+      "href": "https://manual.linestep.net/kiji2716"
+    },
+    {
+      "text": "7月3日 ※重要※ モバイルアプリへの通知再設定の対応のご依頼 大変申し訳ございませんが、当社不手際により、iOS版モバイルアプリにおいて、通知が届いていない場合があります。\n詳細はクリックしてご確認のうえ、通知の再設定をお願いいたします。",
+      "href": "https://manager.linestep.net/#"
+    },
+    {
+      "text": "4月8日 【成果直結】Lステップを最短で使いこなす「3つの無料サポート」 Lステップをご活用いただき、ありがとうございます。最短で成果へ繋げる『3つの無料サポート』をご用意しました。詳細はクリックしてご確認ください。",
+      "href": "https://manager.linestep.net/#"
+    }
+  ],
+  "sample": [
+    {
+      "text": "equalizer送信数",
+      "href": "https://manager.linestep.net/line/analytics/send"
+    },
+    {
+      "text": "トップ",
+      "href": "https://manager.linestep.net/"
+    },
+    {
+      "text": "友だちリスト",
+      "href": "https://manager.linestep.net/line/show"
+    },
+    {
+      "text": "トーク一覧54",
+      "href": "https://manager.linestep.net/line/timeline"
+    },
+    {
+      "text": "個別トーク",
+      "href": "https://manager.linestep.net/line/visual"
+    },
+    {
+      "text": "シナリオ配信",
+      "href": "https://manager.linestep.net/line/content/group"
+    },
+    {
+      "text": "一斉配信",
+      "href": "https://manager.linestep.net/line/magazine"
+    },
+    {
+      "text": "自動応答",
+      "href": "https://manager.linestep.net/line/reaction"
+    },
+    {
+      "text": "テンプレート",
+      "href": "https://manager.linestep.net/line/template"
+    },
+    {
+      "text": "イベント予約",
+      "href": "https://manager.linestep.net/line/reserve/event"
+    },
+    {
+      "text": "カレンダー予約",
+      "href": "https://manager.linestep.net/line/reserve/salon"
+    },
+    {
+      "text": "回答フォームNEW",
+      "href": "https://manager.linestep.net/line/form"
+    },
+    {
+      "text": "リマインダ配信",
+      "href": "https://manager.linestep.net/line/episode"
+    },
+    {
+      "text": "友だち追加時設定",
+      "href": "https://manager.linestep.net/line/setting/follow"
+    },
+    {
+      "text": "アクション管理",
+      "href": "https://manager.linestep.net/line/action"
+    },
+    {
+      "text": "タグ管理",
+      "href": "https://manager.linestep.net/line/tag"
+    },
+    {
+      "text": "友だち情報欄管理",
+      "href": "https://manager.linestep.net/line/var"
+    },
+    {
+      "text": "カスタム検索管理",
+      "href": "https://manager.linestep.net/line/funnel"
+    },
+    {
+      "text": "対応マーク管理",
+      "href": "https://manager.linestep.net/line/setting/notify"
+    },
+    {
+      "text": "共通情報",
+      "href": "https://manager.linestep.net/line/common_var"
+    },
+    {
+      "text": "登録メディア一覧",
+      "href": "https://manager.linestep.net/line/media"
+    },
+    {
+      "text": "アカウント設定",
+      "href": "https://manager.linestep.net/line/account"
+    },
+    {
+      "text": "スタッフ設定",
+      "href": "https://manager.linestep.net/line/role"
+    },
+    {
+      "text": "データ移行β版",
+      "href": "https://manager.linestep.net/line/forger"
+    },
+    {
+      "text": "マイページ",
+      "href": "https://manager.linestep.net/account"
+    },
+    {
+      "text": "通知機能",
+      "href": "https://manager.linestep.net/line/notifications"
+    },
+    {
+      "text": "新規アカウント発行",
+      "href": "https://manager.linestep.net/account/newuser"
+    },
+    {
+      "text": "L-CAST",
+      "href": "https://manager.linestep.net/line/account?focus=plan&scroll_to=L%E3%82%B9%E3%83%86%E3%83%83%E3%83%97plus%2b"
+    },
+    {
+      "text": "Lメール",
+      "href": "https://manager.linestep.net/line/account?focus=plan&scroll_to=L%E3%82%B9%E3%83%86%E3%83%83%E3%83%97plus%2b"
+    },
+    {
+      "text": "webhook機能",
+      "href": "https://manager.linestep.net/line/account?focus=plan&scroll_to=option_list"
+    },
+    {
+      "text": "オペレーター",
+      "href": "https://manager.linestep.net/line/account?focus=plan&scroll_to=option_list"
+    },
+    {
+      "text": "ご利用マニュアルopen_in_new",
+      "href": "https://manual.linestep.net/"
+    },
+    {
+      "text": "送信エラー一覧を開く",
+      "href": "https://manager.linestep.net/line/faillist"
+    },
+    {
+      "text": "詳細はこちら",
+      "href": "https://manual.linestep.net/fixrecieve"
+    },
+    {
+      "text": "162人",
+      "href": "https://manager.linestep.net/line/show"
+    },
+    {
+      "text": "スタート",
+      "href": "https://manager.linestep.net/line/account?focus=plan"
+    },
+    {
+      "text": "4,999",
+      "href": "https://manager.linestep.net/line/analytics/send"
+    },
+    {
+      "text": "アップグレードする",
+      "href": "https://manager.linestep.net/line/account?focus=plan&scroll_to=plan_list"
+    },
+    {
+      "text": "Lステップplus+",
+      "href": "https://manager.linestep.net/line/account?focus=plan&scroll_to=L%E3%82%B9%E3%83%86%E3%83%83%E3%83%97plus%2b"
+    },
+    {
+      "text": "199",
+      "href": "https://manager.linestep.net/line/analytics/send"
+    },
+    {
+      "text": "さらに詳しく",
+      "href": "https://manager.linestep.net/line/analytics"
+    },
+    {
+      "text": "さらに詳しく",
+      "href": "https://manager.linestep.net/line/timeline"
+    },
+    {
+      "text": "仁成",
+      "href": "https://manager.linestep.net/line/detail/263893987"
+    },
+    {
+      "text": "仁成",
+      "href": "https://manager.linestep.net/line/detail/263893987"
+    },
+    {
+      "text": "森田詩月",
+      "href": "https://manager.linestep.net/line/detail/264128523"
+    },
+    {
+      "text": "亜悠美",
+      "href": "https://manager.linestep.net/line/detail/264071130"
+    },
+    {
+      "text": "吉田　亘",
+      "href": "https://manager.linestep.net/line/detail/262116388"
+    },
+    {
+      "text": "仁成",
+      "href": "https://manager.linestep.net/line/detail/263893987"
+    },
+    {
+      "text": "関森 蒼依",
+      "href": "https://manager.linestep.net/line/detail/262688134"
+    },
+    {
+      "text": "仁成",
+      "href": "https://manager.linestep.net/line/detail/263893987"
+    },
+    {
+      "text": "金沢尚",
+      "href": "https://manager.linestep.net/line/detail/263966694"
+    },
+    {
+      "text": "和田莉緒",
+      "href": "https://manager.linestep.net/line/detail/263886979"
+    },
+    {
+      "text": "7月28日 アップデートのお知らせ 詳細はクリックして確認してください。",
+      "href": "https://manual.linestep.net/kiji2718"
+    },
+    {
+      "text": "7月22日 【夏季休業のお知らせ】 いつも弊社サービスをご利用頂きましてありがとうございます。\n誠に勝手ながら、8月10日(月)～8月14日(金)の期間を夏季休業とさせて頂きます。\n※チャットボットサポートの有人チャットは18日(火)10時からとなります。\n\n詳しくはこちらをクリックしてご確認ください。",
+      "href": "https://manager.linestep.net/#"
+    },
+    {
+      "text": "7月21日 アップデートのお知らせ 詳細はクリックして確認してください。",
+      "href": "https://manual.linestep.net/kiji2717"
+    },
+    {
+      "text": "7月14日 【復旧済み】新規で友だち追加された際に、シナリオの「購読開始直後」のメッセージおよび通知が配信されない事象について 新規で友だち追加された際に、シナリオの「購読開始直後」に設定したメッセージが配信されない、または友だち追加時の通知が届かない不具合が発生しておりました。\n\n現在は復旧しております。\n詳細は、クリックしてご確認ください。",
+      "href": "https://manager.linestep.net/#"
+    },
+    {
+      "text": "7月14日 アップデートのお知らせ 詳細はクリックして確認してください。",
+      "href": "https://manual.linestep.net/kiji2716"
+    },
+    {
+      "text": "7月3日 ※重要※ モバイルアプリへの通知再設定の対応のご依頼 大変申し訳ございませんが、当社不手際により、iOS版モバイルアプリにおいて、通知が届いていない場合があります。\n詳細はクリックしてご確認のうえ、通知の再設定をお願いいたします。",
+      "href": "https://manager.linestep.net/#"
+    },
+    {
+      "text": "4月8日 【成果直結】Lステップを最短で使いこなす「3つの無料サポート」 Lステップをご活用いただき、ありがとうございます。最短で成果へ繋げる『3つの無料サポート』をご用意しました。詳細はクリックしてご確認ください。",
+      "href": "https://manager.linestep.net/#"
+    },
+    {
+      "text": "ご利用マニュアル",
+      "href": "https://manual.linestep.net/"
+    }
+  ]
+}

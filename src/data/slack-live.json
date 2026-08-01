@@ -1,0 +1,400 @@
+{
+  "source": "slack",
+  "workspace": "才職CAREER",
+  "channel": "admin-reservations",
+  "generatedAt": "2026-08-01T06:25:56.583Z",
+  "earliestDate": "2026-06-18",
+  "latestDate": "2026-08-01",
+  "availability": {
+    "lpVisitors": false,
+    "lineVisitors": false,
+    "registrationButtonClicks": false,
+    "registrationsCompleted": true,
+    "consultationsBooked": true,
+    "consultationsCompleted": true,
+    "consultationsCancelled": false
+  },
+  "consultations": [
+    {
+      "bookingId": "slk-1",
+      "bookedDate": "2026-07-31",
+      "scheduledDate": "2026-8-2 2",
+      "status": "pending",
+      "completedDate": null,
+      "cancelledDate": null
+    },
+    {
+      "bookingId": "slk-2",
+      "bookedDate": "2026-07-30",
+      "scheduledDate": "2026-7-30 ",
+      "status": "completed",
+      "completedDate": "2026-07-30",
+      "cancelledDate": null
+    },
+    {
+      "bookingId": "slk-3",
+      "bookedDate": "2026-07-30",
+      "scheduledDate": "2026-7-31 ",
+      "status": "completed",
+      "completedDate": "2026-07-31",
+      "cancelledDate": null
+    },
+    {
+      "bookingId": "slk-4",
+      "bookedDate": "2026-07-13",
+      "scheduledDate": "2026-7-13 ",
+      "status": "pending",
+      "completedDate": null,
+      "cancelledDate": null
+    },
+    {
+      "bookingId": "slk-5",
+      "bookedDate": "2026-07-12",
+      "scheduledDate": "2026-7-12 ",
+      "status": "pending",
+      "completedDate": null,
+      "cancelledDate": null
+    },
+    {
+      "bookingId": "slk-6",
+      "bookedDate": "2026-07-11",
+      "scheduledDate": "2026-7-11 ",
+      "status": "pending",
+      "completedDate": null,
+      "cancelledDate": null
+    },
+    {
+      "bookingId": "slk-7",
+      "bookedDate": "2026-06-26",
+      "scheduledDate": "2026-6-26 ",
+      "status": "completed",
+      "completedDate": "2026-06-26",
+      "cancelledDate": null
+    },
+    {
+      "bookingId": "slk-8",
+      "bookedDate": "2026-06-24",
+      "scheduledDate": "2026-6-26 ",
+      "status": "pending",
+      "completedDate": null,
+      "cancelledDate": null
+    },
+    {
+      "bookingId": "slk-9",
+      "bookedDate": "2026-06-22",
+      "scheduledDate": "2026-6-23 ",
+      "status": "pending",
+      "completedDate": null,
+      "cancelledDate": null
+    },
+    {
+      "bookingId": "slk-10",
+      "bookedDate": "2026-06-22",
+      "scheduledDate": "2026-6-22 ",
+      "status": "pending",
+      "completedDate": null,
+      "cancelledDate": null
+    },
+    {
+      "bookingId": "slk-11",
+      "bookedDate": "2026-06-21",
+      "scheduledDate": "2026-6-23 ",
+      "status": "pending",
+      "completedDate": null,
+      "cancelledDate": null
+    },
+    {
+      "bookingId": "slk-12",
+      "bookedDate": "2026-06-19",
+      "scheduledDate": "2026-6-22 ",
+      "status": "pending",
+      "completedDate": null,
+      "cancelledDate": null
+    },
+    {
+      "bookingId": "slk-13",
+      "bookedDate": "2026-06-18",
+      "scheduledDate": "2026-6-18 ",
+      "status": "pending",
+      "completedDate": null,
+      "cancelledDate": null
+    }
+  ],
+  "daily": [
+    {
+      "date": "2026-06-18",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 1,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-06-19",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 1,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-06-20",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-06-21",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 1,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-06-22",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 2,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-06-23",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-06-24",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 1,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-06-25",
+      "registrationsCompleted": 2,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-06-26",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 1,
+      "consultationsCompleted": 1
+    },
+    {
+      "date": "2026-06-27",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-06-28",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-06-29",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-06-30",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-07-01",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-07-02",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-07-03",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-07-04",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-07-05",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-07-06",
+      "registrationsCompleted": 1,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-07-07",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-07-08",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-07-09",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-07-10",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-07-11",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 1,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-07-12",
+      "registrationsCompleted": 2,
+      "consultationsBooked": 1,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-07-13",
+      "registrationsCompleted": 1,
+      "consultationsBooked": 1,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-07-14",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-07-15",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-07-16",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-07-17",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-07-18",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-07-19",
+      "registrationsCompleted": 2,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-07-20",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-07-21",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-07-22",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-07-23",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-07-24",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-07-25",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-07-26",
+      "registrationsCompleted": 1,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-07-27",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-07-28",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-07-29",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-07-30",
+      "registrationsCompleted": 4,
+      "consultationsBooked": 2,
+      "consultationsCompleted": 1
+    },
+    {
+      "date": "2026-07-31",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 1,
+      "consultationsCompleted": 1
+    },
+    {
+      "date": "2026-08-01",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    }
+  ],
+  "totals": {
+    "registrations": 13,
+    "booked": 13,
+    "completed": 3
+  }
+}

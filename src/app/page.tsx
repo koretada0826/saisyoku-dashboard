@@ -154,11 +154,11 @@ export default function DashboardPage() {
                   データ接続状況（Phase 1）
                 </p>
                 <p className="mt-1 leading-relaxed text-[var(--color-muted)]">
-                  <span className="font-medium text-[var(--color-foreground)]">LINE流入（Lステップ）・登録完了・面談予約・面談実施・キャンセル（アプリ 相談者/面談履歴）</span> を
+                  <span className="font-medium text-[var(--color-foreground)]">LP流入（GA4 Data API）・LINE流入（Lステップ）・登録完了・面談予約・面談実施・キャンセル（アプリ 相談者/面談履歴）</span> を
                   日次で実データ表示中です。面談実施＝アプリの「完了」、キャンセル＝「キャンセル」を面談日で正確に集計しています。
                   <br />
-                  <span className="font-medium">LP流入</span> は未接続（GA4が未計測＝データ無し。計測開始＋GA4 Data API連携が必要）、
-                  <span className="font-medium">登録ボタン押下</span> は未接続（Lステップに日別クリック計測が無い）です。
+                  <span className="font-medium">LP流入</span> は現在「サイト全体の訪問者」で集計（特定のLPページに絞り込む設定も可能）。
+                  残る <span className="font-medium">登録ボタン押下</span> のみ未接続（Lステップに日別クリック計測が無い）です。
                 </p>
               </div>
 

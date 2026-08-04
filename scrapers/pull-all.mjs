@@ -2,7 +2,7 @@
  * 全ソースを一括取得してダッシュボード用JSONを更新する。
  *  - Slack(面談予約/実施): API (scripts/pull-slack.mjs)
  *  - Lステップ(LINE流入):  Playwright (scrapers/lstep.mjs)
- *  - GA4(LP流入):          Playwright (scrapers/ga4.mjs)
+ *  - GA4(LP流入):          Data API (scrapers/ga4-api.mjs / サービスアカウント鍵)
  *
  * 実行: node scrapers/pull-all.mjs
  * 前提: 事前に一度 `node scrapers/login.mjs` でLステップ/GA4にログイン済みであること。
@@ -14,7 +14,7 @@ import { writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { PROFILE_DIR, DATA_DIR, ROOT, jstDate } from "./config.mjs";
 import { scrapeLstep } from "./lstep.mjs";
-import { scrapeGa4 } from "./ga4.mjs";
+import { fetchGa4Lp } from "./ga4-api.mjs";
 import { scrapeSeekers } from "./app-seekers.mjs";
 
 // 1) Slack (面談) — 既存のAPIスクリプト
@@ -81,10 +81,10 @@ try {
     console.error(`[アプリ] ${e.message}`);
   }
 
-  // GA4
+  // GA4 (Data API — ブラウザ不要。サービスアカウント鍵で認証)
   try {
     console.log("[GA4] LP流入を取得中…");
-    const res = await scrapeGa4(ctx);
+    const res = await fetchGa4Lp();
     writeFileSync(
       resolve(DATA_DIR, "ga4-live.json"),
       JSON.stringify(
@@ -93,7 +93,8 @@ try {
           available: res.available,
           note: res.note,
           generatedAt: new Date().toISOString(),
-          latestDate: jstDate(),
+          latestDate: res.daily.length ? res.daily[res.daily.length - 1].date : jstDate(),
+          earliestDate: res.daily.length ? res.daily[0].date : null,
           daily: res.daily,
         },
         null,

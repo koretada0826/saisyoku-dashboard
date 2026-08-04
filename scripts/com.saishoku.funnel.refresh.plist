@@ -8,7 +8,7 @@
   解除:
     launchctl unload ~/Library/LaunchAgents/com.saishoku.funnel.refresh.plist
 
-  毎日 08:00(端末ローカル時刻) に GA4+Slack を取得する。
+  毎日 08:00 に GA4+Slack を取得し公開版へ自動反映（~/Desktop外に配置しTCC回避）。
 -->
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -19,11 +19,11 @@
     <key>ProgramArguments</key>
     <array>
         <string>/bin/bash</string>
-        <string>/Users/koretada/Desktop/まさきさん/funnel-dashboard/scripts/daily-refresh.sh</string>
+        <string>/Users/koretada/funnel-dashboard/scripts/daily-refresh.sh</string>
     </array>
 
     <key>WorkingDirectory</key>
-    <string>/Users/koretada/Desktop/まさきさん/funnel-dashboard</string>
+    <string>/Users/koretada/funnel-dashboard</string>
 
     <key>EnvironmentVariables</key>
     <dict>
@@ -40,8 +40,8 @@
     </dict>
 
     <key>StandardOutPath</key>
-    <string>/Users/koretada/Desktop/まさきさん/funnel-dashboard/logs/launchd.out.log</string>
+    <string>/Users/koretada/funnel-dashboard/logs/launchd.out.log</string>
     <key>StandardErrorPath</key>
-    <string>/Users/koretada/Desktop/まさきさん/funnel-dashboard/logs/launchd.err.log</string>
+    <string>/Users/koretada/funnel-dashboard/logs/launchd.err.log</string>
 </dict>
 </plist>

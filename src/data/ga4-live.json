@@ -1,8 +1,8 @@
 {
   "source": "ga4",
   "available": true,
-  "note": "GA4 Data API / プロパティ542041606 / LP流入=ページパス = \"/\"のアクティブユーザー(日別)。",
-  "generatedAt": "2026-08-04T09:34:54.955Z",
+  "note": "GA4 Data API / プロパティ542041606 / LP流入=ページパス = \"/\"のnewUsers(日別)。",
+  "generatedAt": "2026-08-04T09:54:42.194Z",
   "latestDate": "2026-08-03",
   "earliestDate": "2026-06-18",
   "daily": [
@@ -12,27 +12,27 @@
     },
     {
       "date": "2026-06-19",
-      "lpVisitors": 12
+      "lpVisitors": 8
     },
     {
       "date": "2026-06-20",
-      "lpVisitors": 13
+      "lpVisitors": 11
     },
     {
       "date": "2026-06-21",
-      "lpVisitors": 15
+      "lpVisitors": 10
     },
     {
       "date": "2026-06-22",
-      "lpVisitors": 15
+      "lpVisitors": 11
     },
     {
       "date": "2026-06-23",
-      "lpVisitors": 20
+      "lpVisitors": 10
     },
     {
       "date": "2026-06-24",
-      "lpVisitors": 20
+      "lpVisitors": 15
     },
     {
       "date": "2026-06-25",
@@ -40,131 +40,127 @@
     },
     {
       "date": "2026-06-26",
-      "lpVisitors": 15
+      "lpVisitors": 12
     },
     {
       "date": "2026-06-27",
-      "lpVisitors": 7
+      "lpVisitors": 6
     },
     {
       "date": "2026-06-28",
-      "lpVisitors": 7
+      "lpVisitors": 5
     },
     {
       "date": "2026-06-29",
-      "lpVisitors": 15
-    },
-    {
-      "date": "2026-06-30",
-      "lpVisitors": 17
-    },
-    {
-      "date": "2026-07-01",
-      "lpVisitors": 19
-    },
-    {
-      "date": "2026-07-02",
-      "lpVisitors": 75
-    },
-    {
-      "date": "2026-07-03",
-      "lpVisitors": 16
-    },
-    {
-      "date": "2026-07-04",
-      "lpVisitors": 15
-    },
-    {
-      "date": "2026-07-05",
-      "lpVisitors": 14
-    },
-    {
-      "date": "2026-07-06",
-      "lpVisitors": 22
-    },
-    {
-      "date": "2026-07-07",
-      "lpVisitors": 5
-    },
-    {
-      "date": "2026-07-08",
-      "lpVisitors": 9
-    },
-    {
-      "date": "2026-07-09",
-      "lpVisitors": 9
-    },
-    {
-      "date": "2026-07-10",
-      "lpVisitors": 14
-    },
-    {
-      "date": "2026-07-11",
-      "lpVisitors": 3
-    },
-    {
-      "date": "2026-07-12",
-      "lpVisitors": 8
-    },
-    {
-      "date": "2026-07-13",
-      "lpVisitors": 12
-    },
-    {
-      "date": "2026-07-14",
-      "lpVisitors": 13
-    },
-    {
-      "date": "2026-07-15",
-      "lpVisitors": 12
-    },
-    {
-      "date": "2026-07-16",
-      "lpVisitors": 5
-    },
-    {
-      "date": "2026-07-17",
-      "lpVisitors": 7
-    },
-    {
-      "date": "2026-07-18",
-      "lpVisitors": 6
-    },
-    {
-      "date": "2026-07-19",
-      "lpVisitors": 4
-    },
-    {
-      "date": "2026-07-20",
-      "lpVisitors": 13
-    },
-    {
-      "date": "2026-07-21",
       "lpVisitors": 10
     },
     {
-      "date": "2026-07-22",
+      "date": "2026-06-30",
+      "lpVisitors": 8
+    },
+    {
+      "date": "2026-07-01",
+      "lpVisitors": 15
+    },
+    {
+      "date": "2026-07-02",
+      "lpVisitors": 67
+    },
+    {
+      "date": "2026-07-03",
       "lpVisitors": 11
     },
     {
-      "date": "2026-07-23",
-      "lpVisitors": 11
+      "date": "2026-07-04",
+      "lpVisitors": 10
     },
     {
-      "date": "2026-07-24",
-      "lpVisitors": 12
+      "date": "2026-07-05",
+      "lpVisitors": 10
     },
     {
-      "date": "2026-07-25",
-      "lpVisitors": 4
+      "date": "2026-07-06",
+      "lpVisitors": 15
     },
     {
-      "date": "2026-07-26",
+      "date": "2026-07-07",
+      "lpVisitors": 3
+    },
+    {
+      "date": "2026-07-08",
       "lpVisitors": 6
     },
     {
+      "date": "2026-07-09",
+      "lpVisitors": 5
+    },
+    {
+      "date": "2026-07-10",
+      "lpVisitors": 8
+    },
+    {
+      "date": "2026-07-11",
+      "lpVisitors": 2
+    },
+    {
+      "date": "2026-07-12",
+      "lpVisitors": 7
+    },
+    {
+      "date": "2026-07-13",
+      "lpVisitors": 7
+    },
+    {
+      "date": "2026-07-14",
+      "lpVisitors": 9
+    },
+    {
+      "date": "2026-07-15",
+      "lpVisitors": 7
+    },
+    {
+      "date": "2026-07-16",
+      "lpVisitors": 1
+    },
+    {
+      "date": "2026-07-17",
+      "lpVisitors": 3
+    },
+    {
+      "date": "2026-07-18",
+      "lpVisitors": 5
+    },
+    {
+      "date": "2026-07-20",
+      "lpVisitors": 6
+    },
+    {
+      "date": "2026-07-21",
+      "lpVisitors": 8
+    },
+    {
+      "date": "2026-07-22",
+      "lpVisitors": 8
+    },
+    {
+      "date": "2026-07-23",
+      "lpVisitors": 9
+    },
+    {
+      "date": "2026-07-24",
+      "lpVisitors": 8
+    },
+    {
+      "date": "2026-07-25",
+      "lpVisitors": 2
+    },
+    {
+      "date": "2026-07-26",
+      "lpVisitors": 3
+    },
+    {
       "date": "2026-07-27",
-      "lpVisitors": 13
+      "lpVisitors": 12
     },
     {
       "date": "2026-07-28",
@@ -172,27 +168,27 @@
     },
     {
       "date": "2026-07-29",
-      "lpVisitors": 11
+      "lpVisitors": 4
     },
     {
       "date": "2026-07-30",
-      "lpVisitors": 52
+      "lpVisitors": 47
     },
     {
       "date": "2026-07-31",
-      "lpVisitors": 58
+      "lpVisitors": 53
     },
     {
       "date": "2026-08-01",
-      "lpVisitors": 8
+      "lpVisitors": 7
     },
     {
       "date": "2026-08-02",
-      "lpVisitors": 5
+      "lpVisitors": 2
     },
     {
       "date": "2026-08-03",
-      "lpVisitors": 6
+      "lpVisitors": 4
     }
   ]
 }

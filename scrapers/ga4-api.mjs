@@ -43,6 +43,10 @@ const LP_MATCH =
   LP_PATH === "/" ? "EXACT" : process.env.GA4_LP_MATCH || "BEGINS_WITH";
 // どこまで遡って取るか（比較用に余裕を持って90日）
 const START_DATE = process.env.GA4_START_DATE || "90daysAgo";
+// LP流入に使う指標。既定 newUsers(新規訪問者)。
+//   ※ activeUsers(ユニーク)は「日別の合計」が期間ユニークと一致せず(同一人物の複数日再訪を二重計上)、
+//     ダッシュボードの期間合計が水増しになるため使わない。newUsers/sessionsは日別合計が正しく加算される。
+const METRIC = process.env.GA4_METRIC || "newUsers";
 
 /** YYYYMMDD → YYYY-MM-DD */
 function fmtDate(yyyymmdd) {
@@ -64,7 +68,7 @@ export async function fetchGa4Lp() {
     property: `properties/${PROPERTY_ID}`,
     dateRanges: [{ startDate: START_DATE, endDate: "yesterday" }],
     dimensions: [{ name: "date" }],
-    metrics: [{ name: "activeUsers" }],
+    metrics: [{ name: METRIC }],
     orderBys: [{ dimension: { dimensionName: "date" } }],
     keepEmptyRows: false,
   };
@@ -103,7 +107,7 @@ export async function fetchGa4Lp() {
 
   return {
     available: true,
-    note: `GA4 Data API / プロパティ${PROPERTY_ID} / LP流入=${scope}のアクティブユーザー(日別)。`,
+    note: `GA4 Data API / プロパティ${PROPERTY_ID} / LP流入=${scope}の${METRIC}(日別)。`,
     daily,
   };
 }

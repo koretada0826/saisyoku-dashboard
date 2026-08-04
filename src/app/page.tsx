@@ -157,7 +157,7 @@ export default function DashboardPage() {
                   <span className="font-medium text-[var(--color-foreground)]">LP流入（GA4 Data API）・LINE流入（Lステップ）・登録完了・面談予約・面談実施・キャンセル（アプリ 相談者/面談履歴）</span> を
                   日次で実データ表示中です。面談実施＝アプリの「完了」、キャンセル＝「キャンセル」を面談日で正確に集計しています。
                   <br />
-                  <span className="font-medium">LP流入</span> はトップページ（saishokucareer.com/）の訪問者数で集計。
+                  <span className="font-medium">LP流入</span> はトップページ（saishokucareer.com/）の新規訪問者数（GA4 newUsers）で集計。
                   残る <span className="font-medium">登録ボタン押下</span> のみ未接続（Lステップに日別クリック計測が無い）です。
                 </p>
               </div>

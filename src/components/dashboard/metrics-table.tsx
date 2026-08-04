@@ -154,7 +154,7 @@ export function MetricsTable({
       </div>
 
       <p className="mt-3 text-[11px] leading-relaxed text-[var(--color-muted)]">
-        ※ LP流入はGA4（現在はサイト全体の訪問者）、面談予約・実施・キャンセルはアプリの面談履歴を「面談日」で集計（実施＝完了、キャンセル＝キャンセル）。登録ボタン押下のみ未接続で「—」表示です。
+        ※ LP流入はGA4（トップページ saishokucareer.com/ の訪問者）、面談予約・実施・キャンセルはアプリの面談履歴を「面談日」で集計（実施＝完了、キャンセル＝キャンセル）。登録ボタン押下のみ未接続で「—」表示です。
       </p>
     </Card>
   );

@@ -1,26 +1,10 @@
 {
   "source": "lstep",
   "available": true,
-  "generatedAt": "2026-08-01T06:32:24.766Z",
-  "earliestDate": "2026-07-02",
-  "latestDate": "2026-08-01",
+  "generatedAt": "2026-08-05T04:35:39.237Z",
+  "earliestDate": "2026-07-06",
+  "latestDate": "2026-08-05",
   "daily": [
-    {
-      "date": "2026-07-02",
-      "lineVisitors": 0
-    },
-    {
-      "date": "2026-07-03",
-      "lineVisitors": 0
-    },
-    {
-      "date": "2026-07-04",
-      "lineVisitors": 0
-    },
-    {
-      "date": "2026-07-05",
-      "lineVisitors": 2
-    },
     {
       "date": "2026-07-06",
       "lineVisitors": 12
@@ -128,6 +112,22 @@
     {
       "date": "2026-08-01",
       "lineVisitors": 1
+    },
+    {
+      "date": "2026-08-02",
+      "lineVisitors": 2
+    },
+    {
+      "date": "2026-08-03",
+      "lineVisitors": 2
+    },
+    {
+      "date": "2026-08-04",
+      "lineVisitors": 2
+    },
+    {
+      "date": "2026-08-05",
+      "lineVisitors": 0
     }
   ]
 }

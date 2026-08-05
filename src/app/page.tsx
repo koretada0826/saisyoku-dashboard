@@ -27,8 +27,10 @@ import {
 import {
   getDataBounds,
   getFunnelMetrics,
+  getSourceFreshness,
   type FunnelMetricsResult,
 } from "@/services/funnel-data-service";
+import { DataFreshness } from "@/components/dashboard/data-freshness";
 
 type Bounds = { today: string; earliest: string };
 type Status = "loading" | "ready" | "empty" | "error";
@@ -161,6 +163,9 @@ export default function DashboardPage() {
                   残る <span className="font-medium">登録ボタン押下</span> のみ未接続（Lステップに日別クリック計測が無い）です。
                 </p>
               </div>
+
+              {/* データ鮮度（各ソースの最終取得・範囲・古い段階の警告） */}
+              <DataFreshness sources={getSourceFreshness()} />
 
               {/* サマリー4指標 */}
               <SummaryCards

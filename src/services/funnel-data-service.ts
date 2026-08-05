@@ -114,6 +114,67 @@ function buildDaily(): DailyFunnelMetric[] {
     });
 }
 
+export type SourceFreshness = {
+  key: string;
+  label: string;
+  /** 対象指標 */
+  metrics: string;
+  available: boolean;
+  /** 最終取得時刻(ISO) */
+  generatedAt: string | null;
+  /** データの範囲 */
+  earliest: string | null;
+  latest: string | null;
+  /** 自動更新されるか（Lステップのみ手動） */
+  auto: boolean;
+};
+
+/** 各データソースの鮮度（最終取得・範囲）。画面で古い/欠けを可視化するため。 */
+export function getSourceFreshness(): SourceFreshness[] {
+  const gDaily = ga4Data.daily as { date: string }[];
+  const lDaily = lstepData.daily as { date: string }[];
+  const aDaily = appData.daily as { date: string }[];
+  const range = (d: { date: string }[]) =>
+    d.length
+      ? { e: d[0].date, l: d[d.length - 1].date }
+      : { e: null, l: null };
+  const g = range(gDaily);
+  const l = range(lDaily);
+  const a = range(aDaily);
+  return [
+    {
+      key: "ga4",
+      label: "GA4",
+      metrics: "LP流入",
+      available: ga4Data.available === true,
+      generatedAt: ga4Data.generatedAt ?? null,
+      earliest: g.e,
+      latest: g.l,
+      auto: true,
+    },
+    {
+      key: "lstep",
+      label: "Lステップ",
+      metrics: "LINE流入",
+      available: lstepData.available === true,
+      generatedAt: lstepData.generatedAt ?? null,
+      earliest: l.e,
+      latest: l.l,
+      auto: false,
+    },
+    {
+      key: "app",
+      label: "アプリ",
+      metrics: "登録・面談・キャンセル",
+      available: appData.available === true,
+      generatedAt: appData.generatedAt ?? null,
+      earliest: a.e,
+      latest: a.l,
+      auto: true,
+    },
+  ];
+}
+
 export async function getDataBounds(): Promise<{
   today: string;
   earliest: string;

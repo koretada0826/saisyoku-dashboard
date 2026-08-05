@@ -43,10 +43,12 @@ const LP_MATCH =
   LP_PATH === "/" ? "EXACT" : process.env.GA4_LP_MATCH || "BEGINS_WITH";
 // どこまで遡って取るか（比較用に余裕を持って90日）
 const START_DATE = process.env.GA4_START_DATE || "90daysAgo";
-// LP流入に使う指標。既定 newUsers(新規訪問者)。
-//   ※ activeUsers(ユニーク)は「日別の合計」が期間ユニークと一致せず(同一人物の複数日再訪を二重計上)、
-//     ダッシュボードの期間合計が水増しになるため使わない。newUsers/sessionsは日別合計が正しく加算される。
-const METRIC = process.env.GA4_METRIC || "newUsers";
+// LP流入/登録ボタン押下に使う指標。既定 sessions(訪問数)。
+//   ※ activeUsers(ユニーク)は日別合計が期間ユニークと一致せず水増し。newUsersは中間ページ(/register)で0。
+//     sessionsは①日別合計＝期間値で正しく加算 ②入口も中間ページも非ゼロ ③段階間で単位が揃う。
+const METRIC = process.env.GA4_METRIC || "sessions";
+// 登録ボタン押下＝登録ページ(/register)到達を計測。EXACT一致。
+const REGISTER_PATH = (process.env.GA4_REGISTER_PATH || "/register").trim();
 
 /** YYYYMMDD → YYYY-MM-DD */
 function fmtDate(yyyymmdd) {
@@ -64,34 +66,46 @@ export async function fetchGa4Lp() {
 
   const client = new BetaAnalyticsDataClient({ keyFilename: KEY_FILE });
 
+  // date × pagePath で LP(/) と 登録(/register) を1回のクエリで取得。
+  // LPは EXACT/前方一致、登録は EXACT。両方をまとめて inListFilter で絞る。
+  const wantPaths = [];
+  if (LP_PATH) wantPaths.push(LP_PATH);
+  if (REGISTER_PATH) wantPaths.push(REGISTER_PATH);
+
   const request = {
     property: `properties/${PROPERTY_ID}`,
     dateRanges: [{ startDate: START_DATE, endDate: "yesterday" }],
-    dimensions: [{ name: "date" }],
+    dimensions: [{ name: "date" }, { name: "pagePath" }],
     metrics: [{ name: METRIC }],
     orderBys: [{ dimension: { dimensionName: "date" } }],
     keepEmptyRows: false,
   };
-
-  // LPページパスで絞り込み（未設定ならサイト全体）
-  if (LP_PATH) {
+  // LPが前方一致(例 /partners)の場合は inList では拾えないため、絞り込みを外して後段で判定。
+  const lpIsPrefix = LP_PATH && LP_MATCH !== "EXACT";
+  if (!lpIsPrefix && wantPaths.length) {
     request.dimensionFilter = {
-      filter: {
-        fieldName: "pagePath",
-        stringFilter: { matchType: LP_MATCH, value: LP_PATH },
-      },
+      filter: { fieldName: "pagePath", inListFilter: { values: wantPaths } },
     };
   }
 
   const [resp] = await client.runReport(request);
   const rows = resp.rows || [];
-  const daily = rows
-    .map((r) => ({
-      date: fmtDate(r.dimensionValues[0].value),
-      lpVisitors: Number(r.metricValues[0].value) || 0,
-    }))
-    .filter((d) => /^\d{4}-\d{2}-\d{2}$/.test(d.date))
-    .sort((a, b) => (a.date < b.date ? -1 : 1));
+
+  // 日付ごとに lpVisitors / registrationButtonClicks を集計
+  const byDate = new Map();
+  const matchLp = (p) =>
+    LP_PATH ? (lpIsPrefix ? p.startsWith(LP_PATH) : p === LP_PATH) : true;
+  for (const r of rows) {
+    const date = fmtDate(r.dimensionValues[0].value);
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) continue;
+    const path = r.dimensionValues[1].value;
+    const v = Number(r.metricValues[0].value) || 0;
+    const cur = byDate.get(date) || { date, lpVisitors: 0, registrationButtonClicks: 0 };
+    if (REGISTER_PATH && path === REGISTER_PATH) cur.registrationButtonClicks += v;
+    else if (matchLp(path)) cur.lpVisitors += v;
+    byDate.set(date, cur);
+  }
+  const daily = [...byDate.values()].sort((a, b) => (a.date < b.date ? -1 : 1));
 
   const scope = LP_PATH
     ? `ページパス ${LP_MATCH === "EXACT" ? "=" : "前方一致"} "${LP_PATH}"`
@@ -107,7 +121,7 @@ export async function fetchGa4Lp() {
 
   return {
     available: true,
-    note: `GA4 Data API / プロパティ${PROPERTY_ID} / LP流入=${scope}の${METRIC}(日別)。`,
+    note: `GA4 Data API / プロパティ${PROPERTY_ID} / LP流入=${scope}, 登録ボタン押下=${REGISTER_PATH} の${METRIC}(日別)。`,
     daily,
   };
 }

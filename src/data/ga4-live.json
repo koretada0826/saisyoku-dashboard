@@ -1,198 +1,250 @@
 {
   "source": "ga4",
   "available": true,
-  "note": "GA4 Data API / プロパティ542041606 / LP流入=ページパス = \"/\"のnewUsers(日別)。",
-  "generatedAt": "2026-08-04T23:00:07.083Z",
+  "note": "GA4 Data API / プロパティ542041606 / LP流入=ページパス = \"/\", 登録ボタン押下=/register のsessions(日別)。",
+  "generatedAt": "2026-08-05T05:05:42.231Z",
   "latestDate": "2026-08-04",
   "earliestDate": "2026-06-18",
   "daily": [
     {
       "date": "2026-06-18",
-      "lpVisitors": 9
+      "lpVisitors": 14,
+      "registrationButtonClicks": 1
     },
     {
       "date": "2026-06-19",
-      "lpVisitors": 8
+      "lpVisitors": 20,
+      "registrationButtonClicks": 1
     },
     {
       "date": "2026-06-20",
-      "lpVisitors": 11
+      "lpVisitors": 17,
+      "registrationButtonClicks": 0
     },
     {
       "date": "2026-06-21",
-      "lpVisitors": 10
+      "lpVisitors": 15,
+      "registrationButtonClicks": 2
     },
     {
       "date": "2026-06-22",
-      "lpVisitors": 11
+      "lpVisitors": 19,
+      "registrationButtonClicks": 1
     },
     {
       "date": "2026-06-23",
-      "lpVisitors": 10
+      "lpVisitors": 29,
+      "registrationButtonClicks": 2
     },
     {
       "date": "2026-06-24",
-      "lpVisitors": 15
+      "lpVisitors": 25,
+      "registrationButtonClicks": 2
     },
     {
       "date": "2026-06-25",
-      "lpVisitors": 19
+      "lpVisitors": 21,
+      "registrationButtonClicks": 0
     },
     {
       "date": "2026-06-26",
-      "lpVisitors": 12
+      "lpVisitors": 18,
+      "registrationButtonClicks": 1
     },
     {
       "date": "2026-06-27",
-      "lpVisitors": 6
+      "lpVisitors": 10,
+      "registrationButtonClicks": 0
     },
     {
       "date": "2026-06-28",
-      "lpVisitors": 5
+      "lpVisitors": 9,
+      "registrationButtonClicks": 0
     },
     {
       "date": "2026-06-29",
-      "lpVisitors": 10
+      "lpVisitors": 18,
+      "registrationButtonClicks": 0
     },
     {
       "date": "2026-06-30",
-      "lpVisitors": 8
+      "lpVisitors": 22,
+      "registrationButtonClicks": 0
     },
     {
       "date": "2026-07-01",
-      "lpVisitors": 15
+      "lpVisitors": 21,
+      "registrationButtonClicks": 0
     },
     {
       "date": "2026-07-02",
-      "lpVisitors": 67
+      "lpVisitors": 89,
+      "registrationButtonClicks": 1
     },
     {
       "date": "2026-07-03",
-      "lpVisitors": 11
+      "lpVisitors": 20,
+      "registrationButtonClicks": 0
     },
     {
       "date": "2026-07-04",
-      "lpVisitors": 10
+      "lpVisitors": 24,
+      "registrationButtonClicks": 1
     },
     {
       "date": "2026-07-05",
-      "lpVisitors": 10
+      "lpVisitors": 18,
+      "registrationButtonClicks": 0
     },
     {
       "date": "2026-07-06",
-      "lpVisitors": 15
+      "lpVisitors": 24,
+      "registrationButtonClicks": 3
     },
     {
       "date": "2026-07-07",
-      "lpVisitors": 3
+      "lpVisitors": 11,
+      "registrationButtonClicks": 1
     },
     {
       "date": "2026-07-08",
-      "lpVisitors": 6
+      "lpVisitors": 11,
+      "registrationButtonClicks": 0
     },
     {
       "date": "2026-07-09",
-      "lpVisitors": 5
+      "lpVisitors": 14,
+      "registrationButtonClicks": 0
     },
     {
       "date": "2026-07-10",
-      "lpVisitors": 8
+      "lpVisitors": 20,
+      "registrationButtonClicks": 0
     },
     {
       "date": "2026-07-11",
-      "lpVisitors": 2
+      "lpVisitors": 4,
+      "registrationButtonClicks": 1
     },
     {
       "date": "2026-07-12",
-      "lpVisitors": 7
+      "lpVisitors": 11,
+      "registrationButtonClicks": 1
     },
     {
       "date": "2026-07-13",
-      "lpVisitors": 7
+      "lpVisitors": 21,
+      "registrationButtonClicks": 2
     },
     {
       "date": "2026-07-14",
-      "lpVisitors": 9
+      "lpVisitors": 20,
+      "registrationButtonClicks": 1
     },
     {
       "date": "2026-07-15",
-      "lpVisitors": 7
+      "lpVisitors": 18,
+      "registrationButtonClicks": 0
     },
     {
       "date": "2026-07-16",
-      "lpVisitors": 1
+      "lpVisitors": 8,
+      "registrationButtonClicks": 0
     },
     {
       "date": "2026-07-17",
-      "lpVisitors": 3
+      "lpVisitors": 12,
+      "registrationButtonClicks": 0
     },
     {
       "date": "2026-07-18",
-      "lpVisitors": 5
+      "lpVisitors": 8,
+      "registrationButtonClicks": 0
+    },
+    {
+      "date": "2026-07-19",
+      "lpVisitors": 6,
+      "registrationButtonClicks": 2
     },
     {
       "date": "2026-07-20",
-      "lpVisitors": 6
+      "lpVisitors": 15,
+      "registrationButtonClicks": 0
     },
     {
       "date": "2026-07-21",
-      "lpVisitors": 8
+      "lpVisitors": 14,
+      "registrationButtonClicks": 0
     },
     {
       "date": "2026-07-22",
-      "lpVisitors": 8
+      "lpVisitors": 15,
+      "registrationButtonClicks": 2
     },
     {
       "date": "2026-07-23",
-      "lpVisitors": 9
+      "lpVisitors": 15,
+      "registrationButtonClicks": 1
     },
     {
       "date": "2026-07-24",
-      "lpVisitors": 8
+      "lpVisitors": 16,
+      "registrationButtonClicks": 0
     },
     {
       "date": "2026-07-25",
-      "lpVisitors": 2
+      "lpVisitors": 4,
+      "registrationButtonClicks": 0
     },
     {
       "date": "2026-07-26",
-      "lpVisitors": 3
+      "lpVisitors": 11,
+      "registrationButtonClicks": 1
     },
     {
       "date": "2026-07-27",
-      "lpVisitors": 12
+      "lpVisitors": 18,
+      "registrationButtonClicks": 3
     },
     {
       "date": "2026-07-28",
-      "lpVisitors": 8
+      "lpVisitors": 12,
+      "registrationButtonClicks": 0
     },
     {
       "date": "2026-07-29",
-      "lpVisitors": 4
+      "lpVisitors": 13,
+      "registrationButtonClicks": 1
     },
     {
       "date": "2026-07-30",
-      "lpVisitors": 47
+      "lpVisitors": 56,
+      "registrationButtonClicks": 5
     },
     {
       "date": "2026-07-31",
-      "lpVisitors": 53
+      "lpVisitors": 60,
+      "registrationButtonClicks": 1
     },
     {
       "date": "2026-08-01",
-      "lpVisitors": 7
+      "lpVisitors": 8,
+      "registrationButtonClicks": 0
     },
     {
       "date": "2026-08-02",
-      "lpVisitors": 2
+      "lpVisitors": 5,
+      "registrationButtonClicks": 1
     },
     {
       "date": "2026-08-03",
-      "lpVisitors": 4
+      "lpVisitors": 8,
+      "registrationButtonClicks": 0
     },
     {
       "date": "2026-08-04",
-      "lpVisitors": 6
+      "lpVisitors": 13,
+      "registrationButtonClicks": 0
     }
   ]
 }

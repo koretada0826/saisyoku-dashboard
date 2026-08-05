@@ -156,11 +156,11 @@ export default function DashboardPage() {
                   データ接続状況（Phase 1）
                 </p>
                 <p className="mt-1 leading-relaxed text-[var(--color-muted)]">
-                  <span className="font-medium text-[var(--color-foreground)]">LP流入（GA4 Data API）・LINE流入（Lステップ）・登録完了・面談予約・面談実施・キャンセル（アプリ 相談者/面談履歴）</span> を
-                  日次で実データ表示中です。面談実施＝アプリの「完了」、キャンセル＝「キャンセル」を面談日で正確に集計しています。
+                  <span className="font-medium text-[var(--color-foreground)]">全6段階を実データで表示中</span>：LP流入・登録ボタン押下（GA4）／LINE流入（Lステップ）／登録完了・面談予約・面談実施・キャンセル（アプリ）。
+                  面談実施＝アプリの「完了」、キャンセル＝「キャンセル」を面談日で集計。
                   <br />
-                  <span className="font-medium">LP流入</span> はトップページ（saishokucareer.com/）の新規訪問者数（GA4 newUsers）で集計。
-                  残る <span className="font-medium">登録ボタン押下</span> のみ未接続（Lステップに日別クリック計測が無い）です。
+                  <span className="font-medium">LP流入</span>＝トップページ（saishokucareer.com/）、
+                  <span className="font-medium">登録ボタン押下</span>＝登録ページ（/register）への訪問数（GA4 sessions）。GA4段階は「訪問（セッション）」、LINE/アプリは「人数」で単位が異なる点に注意。
                 </p>
               </div>
 

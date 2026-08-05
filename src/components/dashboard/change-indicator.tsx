@@ -1,15 +1,34 @@
 import { ArrowUpRight, ArrowDownRight, Minus } from "lucide-react";
 import type { Comparison } from "@/types/funnel";
-import { formatChangeRate } from "@/lib/formatters";
+import { formatChangeRate, formatDelta } from "@/lib/formatters";
 import { cn } from "@/lib/utils";
 
 type Tone = "positive" | "negative" | "neutral";
 
 function toneOf(comparison: Comparison): Tone {
-  if (comparison.changeRate === null) return "neutral";
+  // 新規(前値0)や前値極小(lowBase)は実数差の符号で色分け
+  if (comparison.changeRate === null || comparison.lowBase) {
+    if (comparison.delta > 0) return "positive";
+    if (comparison.delta < 0) return "negative";
+    return "neutral";
+  }
   if (comparison.changeRate > 0) return "positive";
   if (comparison.changeRate < 0) return "negative";
   return "neutral";
+}
+
+// %がこの絶対値を超えたら実数差にフォールバック（前期間がデータ範囲外等で桁が飛ぶのを防ぐ）
+const RATE_CAP = 300;
+
+/** 表示テキスト：新規→「新規」／前値極小・%が極端→実数差(+188)／それ以外→% */
+function changeText(comparison: Comparison): string {
+  if (comparison.changeRate === null) {
+    return comparison.isNew ? "新規" : "—";
+  }
+  if (comparison.lowBase || Math.abs(comparison.changeRate) > RATE_CAP) {
+    return comparison.delta === 0 ? "±0" : formatDelta(comparison.delta);
+  }
+  return formatChangeRate(comparison.changeRate);
 }
 
 const ICONS = {
@@ -42,11 +61,7 @@ export function ChangePill({ comparison }: { comparison: Comparison }) {
       )}
     >
       <Icon className="h-4 w-4" aria-hidden />
-      {comparison.changeRate === null
-        ? comparison.isNew
-          ? "新規"
-          : "—"
-        : formatChangeRate(comparison.changeRate)}
+      {changeText(comparison)}
     </span>
   );
 }
@@ -71,11 +86,7 @@ export function MiniChange({
         )}
       >
         <Icon className="h-3.5 w-3.5" aria-hidden />
-        {comparison.changeRate === null
-          ? comparison.isNew
-            ? "新規"
-            : "—"
-          : formatChangeRate(comparison.changeRate)}
+        {changeText(comparison)}
       </span>
     </div>
   );

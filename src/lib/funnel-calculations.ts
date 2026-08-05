@@ -41,6 +41,9 @@ export function calculateConversionRate(
 }
 
 /** 前期間との比較(増減率・増減数・新規判定) */
+// 前値がこの値未満だと%が極端に振れる(例:2→204で+10100%)ので、%でなく実数差で見せる
+const MIN_BASE_FOR_RATE = 5;
+
 export function buildComparison(current: number, previous: number): Comparison {
   const delta = current - previous;
   if (previous === 0) {
@@ -50,6 +53,7 @@ export function buildComparison(current: number, previous: number): Comparison {
       changeRate: null,
       delta,
       isNew: current > 0,
+      lowBase: false,
     };
   }
   return {
@@ -58,6 +62,8 @@ export function buildComparison(current: number, previous: number): Comparison {
     changeRate: (delta / previous) * 100,
     delta,
     isNew: false,
+    // 前値が小さいと%は誤解を招く → 表示側で実数差にフォールバック
+    lowBase: previous < MIN_BASE_FOR_RATE,
   };
 }
 

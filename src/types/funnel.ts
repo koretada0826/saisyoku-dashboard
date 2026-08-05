@@ -95,6 +95,8 @@ export type Comparison = {
   delta: number;
   /** 前値0だが当値>0 → 新規発生 */
   isNew: boolean;
+  /** 前値が小さすぎて%が不安定(例:2→204で+10100%) → %でなく実数差を出す */
+  lowBase: boolean;
 };
 
 /** KPIカード1枚分に必要な比較セット */

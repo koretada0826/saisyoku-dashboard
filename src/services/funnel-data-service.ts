@@ -67,7 +67,8 @@ const APP_BY_DATE = new Map(APP_DAILY.map((d) => [d.date, d]));
 const AVAILABILITY: MetricAvailability = {
   lpVisitors: GA4_AVAILABLE,
   lineVisitors: LSTEP_AVAILABLE,
-  registrationButtonClicks: false,
+  // 登録ボタン押下＝GA4 /register への訪問(sessions)。GA4接続で true。
+  registrationButtonClicks: GA4_AVAILABLE,
   registrationsCompleted: APP_AVAILABLE,
   consultationsBooked: APP_AVAILABLE,
   consultationsCompleted: APP_AVAILABLE,
@@ -76,11 +77,18 @@ const AVAILABILITY: MetricAvailability = {
 
 // 空配列JSONの never 推論を避けるため明示キャスト
 const LSTEP_DAILY = lstepData.daily as { date: string; lineVisitors: number }[];
-const GA4_DAILY = ga4Data.daily as { date: string; lpVisitors: number }[];
+const GA4_DAILY = ga4Data.daily as {
+  date: string;
+  lpVisitors: number;
+  registrationButtonClicks?: number;
+}[];
 
-// LINE流入(Lステップ) / LP流入(GA4) を日付キーで引けるように
+// LINE流入(Lステップ) / LP流入・登録押下(GA4) を日付キーで引けるように
 const LINE_BY_DATE = new Map(LSTEP_DAILY.map((d) => [d.date, d.lineVisitors]));
 const LP_BY_DATE = new Map(GA4_DAILY.map((d) => [d.date, d.lpVisitors]));
+const REGCLICK_BY_DATE = new Map(
+  GA4_DAILY.map((d) => [d.date, d.registrationButtonClicks ?? 0]),
+);
 
 function delay(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -105,7 +113,7 @@ function buildDaily(): DailyFunnelMetric[] {
         date,
         lpVisitors: LP_BY_DATE.get(date) ?? 0,
         lineVisitors: LINE_BY_DATE.get(date) ?? 0,
-        registrationButtonClicks: 0,
+        registrationButtonClicks: REGCLICK_BY_DATE.get(date) ?? 0,
         registrationsCompleted: a?.registrationsCompleted ?? 0,
         consultationsBooked: a?.consultationsBooked ?? 0,
         consultationsCompleted: a?.consultationsCompleted ?? 0,
@@ -145,7 +153,7 @@ export function getSourceFreshness(): SourceFreshness[] {
     {
       key: "ga4",
       label: "GA4",
-      metrics: "LP流入",
+      metrics: "LP流入・登録ボタン押下",
       available: ga4Data.available === true,
       generatedAt: ga4Data.generatedAt ?? null,
       earliest: g.e,

@@ -35,7 +35,9 @@ import { DataFreshness } from "@/components/dashboard/data-freshness";
 type Bounds = { today: string; earliest: string };
 type Status = "loading" | "ready" | "empty" | "error";
 
-const DEFAULT_PRESET: PresetKey = "last30";
+// 既定は「累計」。30日等の窓だと登録(登録日基準)と面談(面談日基準)の集計ズレで
+// 予約>登録のように見えるため、矛盾なく収まる累計を初期表示にする。
+const DEFAULT_PRESET: PresetKey = "cumulative";
 
 export default function DashboardPage() {
   const [bounds, setBounds] = useState<Bounds | null>(null);
@@ -161,6 +163,8 @@ export default function DashboardPage() {
                   <br />
                   <span className="font-medium">LP流入</span>＝トップページ（saishokucareer.com/）、
                   <span className="font-medium">登録ボタン押下</span>＝登録ページ（/register）への訪問数（GA4 sessions）。GA4段階は「訪問（セッション）」、LINE/アプリは「人数」で単位が異なる点に注意。
+                  <br />
+                  <span className="font-medium">集計基準</span>：登録完了は「登録日」、面談予約・実施・キャンセルは「面談日」で数えます。そのため短い期間の窓では両者に日付のズレが生じ、一時的に「予約＞登録」に見えることがあります（累計では 登録≧予約≧実施 と正しく収まります）。初期表示は矛盾の出ない<span className="font-medium">「累計」</span>にしています。
                 </p>
               </div>
 

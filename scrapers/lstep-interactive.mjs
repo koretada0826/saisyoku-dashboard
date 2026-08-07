@@ -49,15 +49,32 @@ if (!loggedIn) {
   process.exit(1);
 }
 
-console.log("ログイン検知。友だち数遷移を取得中…");
-const daily = await scrapeLstep(ctx); // 同一コンテキスト＝ログイン済み
+console.log("ログイン検知。友だち数遷移の表が出るまで待って取得します…");
+
+// 表の描画が遅れて0件になるのを防ぐ：行が取れるまで最大6回リトライ
+let daily = [];
+for (let attempt = 1; attempt <= 6; attempt++) {
+  daily = await scrapeLstep(ctx);
+  if (daily.length > 0) break;
+  console.log(`  取得0件（${attempt}/6）… 3秒待って再試行`);
+  await page.waitForTimeout(3000);
+}
+
+// 【重要】0件のときは既存の良いデータを絶対に上書きしない
+if (daily.length === 0) {
+  console.error(
+    "取得0件のため書き込みを中止しました（既存データは保持）。ログイン後に『友だち数遷移』が表示される画面まで進んでから再実行してください。",
+  );
+  await ctx.close();
+  process.exit(2);
+}
 
 writeFileSync(
   resolve(DATA_DIR, "lstep-live.json"),
   JSON.stringify(
     {
       source: "lstep",
-      available: daily.length > 0,
+      available: true,
       generatedAt: new Date().toISOString(),
       earliestDate: daily[0]?.date ?? null,
       latestDate: jstDate(),
@@ -68,6 +85,8 @@ writeFileSync(
   ),
 );
 
-console.log(`Lステップ: LINE流入 ${daily.length}日分を取得しました。`);
+console.log(
+  `Lステップ: LINE流入 ${daily.length}日分を取得しました（${daily[0].date}〜${daily[daily.length - 1].date}）。`,
+);
 await ctx.close();
 process.exit(0);

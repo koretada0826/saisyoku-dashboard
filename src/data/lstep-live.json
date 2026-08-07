@@ -1,9 +1,9 @@
 {
   "source": "lstep",
   "available": true,
-  "generatedAt": "2026-08-05T04:35:39.237Z",
+  "generatedAt": "2026-08-07T22:08:56.212Z",
   "earliestDate": "2026-07-06",
-  "latestDate": "2026-08-05",
+  "latestDate": "2026-08-08",
   "daily": [
     {
       "date": "2026-07-06",
@@ -127,6 +127,18 @@
     },
     {
       "date": "2026-08-05",
+      "lineVisitors": 1
+    },
+    {
+      "date": "2026-08-06",
+      "lineVisitors": 0
+    },
+    {
+      "date": "2026-08-07",
+      "lineVisitors": 0
+    },
+    {
+      "date": "2026-08-08",
       "lineVisitors": 0
     }
   ]

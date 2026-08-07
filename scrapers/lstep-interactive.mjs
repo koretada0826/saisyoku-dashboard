@@ -8,7 +8,7 @@
  *  3. src/data/lstep-live.json に書き出して自動で閉じる
  */
 import { chromium } from "playwright";
-import { writeFileSync } from "node:fs";
+import { writeFileSync, existsSync, readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { PROFILE_DIR, DATA_DIR, jstDate } from "./config.mjs";
 import { scrapeLstep } from "./lstep.mjs";
@@ -69,16 +69,32 @@ if (daily.length === 0) {
   process.exit(2);
 }
 
+// 既存データと統合（今回の取得が短期間でも過去分を失わない。重複日は今回値で上書き）
+const outPath = resolve(DATA_DIR, "lstep-live.json");
+const merged = new Map();
+if (existsSync(outPath)) {
+  try {
+    const prev = JSON.parse(readFileSync(outPath, "utf8"));
+    for (const d of prev.daily ?? []) merged.set(d.date, d.lineVisitors);
+  } catch {
+    /* 壊れていれば無視して新規のみ */
+  }
+}
+for (const d of daily) merged.set(d.date, d.lineVisitors);
+const mergedDaily = [...merged.entries()]
+  .map(([date, lineVisitors]) => ({ date, lineVisitors }))
+  .sort((a, b) => (a.date < b.date ? -1 : 1));
+
 writeFileSync(
-  resolve(DATA_DIR, "lstep-live.json"),
+  outPath,
   JSON.stringify(
     {
       source: "lstep",
       available: true,
       generatedAt: new Date().toISOString(),
-      earliestDate: daily[0]?.date ?? null,
-      latestDate: jstDate(),
-      daily,
+      earliestDate: mergedDaily[0]?.date ?? null,
+      latestDate: mergedDaily[mergedDaily.length - 1]?.date ?? jstDate(),
+      daily: mergedDaily,
     },
     null,
     2,
@@ -86,7 +102,7 @@ writeFileSync(
 );
 
 console.log(
-  `Lステップ: LINE流入 ${daily.length}日分を取得しました（${daily[0].date}〜${daily[daily.length - 1].date}）。`,
+  `Lステップ: 今回${daily.length}日分取得 → 既存と統合し ${mergedDaily.length}日分（${mergedDaily[0].date}〜${mergedDaily[mergedDaily.length - 1].date}）を保存。`,
 );
 await ctx.close();
 process.exit(0);

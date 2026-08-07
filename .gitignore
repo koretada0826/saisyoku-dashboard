@@ -50,3 +50,6 @@ ga4-service-account.json
 
 # refresh logs
 logs/
+
+# Lステップ診断ダンプ(PII含む・一時)
+scrapers/lstep-diag-output.json

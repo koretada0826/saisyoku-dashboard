@@ -116,22 +116,30 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const ctx = await chromium.launchPersistentContext(PROFILE_DIR, { headless: true });
   try {
     const r = await scrapeSeekers(ctx);
-    const out = {
-      source: "app",
-      available: r.daily.length > 0,
-      cancellationTracked: r.hasCancellation,
-      generatedAt: new Date().toISOString(),
-      earliestDate: r.daily[0]?.date ?? null,
-      latestDate: jstDate(),
-      totalSeekers: r.totalSeekers,
-      statusVocab: r.statusVocab,
-      daily: r.daily,
-    };
-    writeFileSync(resolve(DATA_DIR, "app-live.json"), JSON.stringify(out, null, 2));
-    const tot = (k) => r.daily.reduce((a, d) => a + d[k], 0);
-    console.log(
-      `アプリ: 登録${r.totalSeekers} 予約${tot("consultationsBooked")} 実施${tot("consultationsCompleted")} キャンセル${tot("consultationsCancelled")} / status=${JSON.stringify(r.statusVocab)}`,
-    );
+    // 【重要】相談者0＝取得失敗(セッション切れ等)とみなし、既存の良いデータを上書きしない。
+    if (r.totalSeekers === 0 && r.daily.length === 0) {
+      console.error(
+        "アプリ取得0件のため書き込みを中止（既存データ保持）。saishokucareer.com/admin へ再ログインが必要な可能性。",
+      );
+      process.exitCode = 2;
+    } else {
+      const out = {
+        source: "app",
+        available: r.daily.length > 0,
+        cancellationTracked: r.hasCancellation,
+        generatedAt: new Date().toISOString(),
+        earliestDate: r.daily[0]?.date ?? null,
+        latestDate: jstDate(),
+        totalSeekers: r.totalSeekers,
+        statusVocab: r.statusVocab,
+        daily: r.daily,
+      };
+      writeFileSync(resolve(DATA_DIR, "app-live.json"), JSON.stringify(out, null, 2));
+      const tot = (k) => r.daily.reduce((a, d) => a + d[k], 0);
+      console.log(
+        `アプリ: 登録${r.totalSeekers} 予約${tot("consultationsBooked")} 実施${tot("consultationsCompleted")} キャンセル${tot("consultationsCancelled")} / status=${JSON.stringify(r.statusVocab)}`,
+      );
+    }
   } finally {
     await ctx.close();
   }

@@ -2,9 +2,9 @@
   "source": "slack",
   "workspace": "才職CAREER",
   "channel": "admin-reservations",
-  "generatedAt": "2026-08-19T23:04:57.331Z",
+  "generatedAt": "2026-08-20T23:04:55.128Z",
   "earliestDate": "2026-06-18",
-  "latestDate": "2026-08-20",
+  "latestDate": "2026-08-21",
   "availability": {
     "lpVisitors": false,
     "lineVisitors": false,
@@ -17,6 +17,14 @@
   "consultations": [
     {
       "bookingId": "slk-1",
+      "bookedDate": "2026-08-20",
+      "scheduledDate": "2026-8-27 ",
+      "status": "pending",
+      "completedDate": null,
+      "cancelledDate": null
+    },
+    {
+      "bookingId": "slk-2",
       "bookedDate": "2026-08-18",
       "scheduledDate": "2026-8-18 ",
       "status": "pending",
@@ -24,7 +32,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-2",
+      "bookingId": "slk-3",
       "bookedDate": "2026-08-16",
       "scheduledDate": "2026-8-18 ",
       "status": "pending",
@@ -32,7 +40,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-3",
+      "bookingId": "slk-4",
       "bookedDate": "2026-08-14",
       "scheduledDate": "2026-8-14 ",
       "status": "pending",
@@ -40,7 +48,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-4",
+      "bookingId": "slk-5",
       "bookedDate": "2026-08-14",
       "scheduledDate": "2026-8-18 ",
       "status": "pending",
@@ -48,7 +56,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-5",
+      "bookingId": "slk-6",
       "bookedDate": "2026-08-13",
       "scheduledDate": "2026-8-21 ",
       "status": "pending",
@@ -56,7 +64,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-6",
+      "bookingId": "slk-7",
       "bookedDate": "2026-08-13",
       "scheduledDate": "2026-8-20 ",
       "status": "pending",
@@ -64,7 +72,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-7",
+      "bookingId": "slk-8",
       "bookedDate": "2026-07-31",
       "scheduledDate": "2026-8-2 2",
       "status": "completed",
@@ -72,7 +80,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-8",
+      "bookingId": "slk-9",
       "bookedDate": "2026-07-30",
       "scheduledDate": "2026-7-30 ",
       "status": "completed",
@@ -80,7 +88,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-9",
+      "bookingId": "slk-10",
       "bookedDate": "2026-07-30",
       "scheduledDate": "2026-7-31 ",
       "status": "completed",
@@ -88,7 +96,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-10",
+      "bookingId": "slk-11",
       "bookedDate": "2026-07-13",
       "scheduledDate": "2026-7-13 ",
       "status": "pending",
@@ -96,7 +104,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-11",
+      "bookingId": "slk-12",
       "bookedDate": "2026-07-12",
       "scheduledDate": "2026-7-12 ",
       "status": "pending",
@@ -104,7 +112,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-12",
+      "bookingId": "slk-13",
       "bookedDate": "2026-07-11",
       "scheduledDate": "2026-7-11 ",
       "status": "pending",
@@ -112,7 +120,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-13",
+      "bookingId": "slk-14",
       "bookedDate": "2026-06-26",
       "scheduledDate": "2026-6-26 ",
       "status": "completed",
@@ -120,7 +128,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-14",
+      "bookingId": "slk-15",
       "bookedDate": "2026-06-24",
       "scheduledDate": "2026-6-26 ",
       "status": "pending",
@@ -128,7 +136,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-15",
+      "bookingId": "slk-16",
       "bookedDate": "2026-06-22",
       "scheduledDate": "2026-6-23 ",
       "status": "pending",
@@ -136,7 +144,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-16",
+      "bookingId": "slk-17",
       "bookedDate": "2026-06-22",
       "scheduledDate": "2026-6-22 ",
       "status": "pending",
@@ -144,7 +152,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-17",
+      "bookingId": "slk-18",
       "bookedDate": "2026-06-21",
       "scheduledDate": "2026-6-23 ",
       "status": "pending",
@@ -152,7 +160,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-18",
+      "bookingId": "slk-19",
       "bookedDate": "2026-06-19",
       "scheduledDate": "2026-6-22 ",
       "status": "pending",
@@ -160,7 +168,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-19",
+      "bookingId": "slk-20",
       "bookedDate": "2026-06-18",
       "scheduledDate": "2026-6-18 ",
       "status": "pending",
@@ -549,14 +557,20 @@
     },
     {
       "date": "2026-08-20",
+      "registrationsCompleted": 1,
+      "consultationsBooked": 1,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-08-21",
       "registrationsCompleted": 0,
       "consultationsBooked": 0,
       "consultationsCompleted": 0
     }
   ],
   "totals": {
-    "registrations": 18,
-    "booked": 19,
+    "registrations": 19,
+    "booked": 20,
     "completed": 4
   }
 }

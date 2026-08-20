@@ -2,14 +2,14 @@
   "source": "app",
   "available": true,
   "cancellationTracked": true,
-  "generatedAt": "2026-08-19T23:04:52.991Z",
+  "generatedAt": "2026-08-20T23:04:50.780Z",
   "earliestDate": "2026-05-20",
-  "latestDate": "2026-08-20",
-  "totalSeekers": 47,
+  "latestDate": "2026-08-21",
+  "totalSeekers": 48,
   "statusVocab": {
+    "予約確定": 2,
     "完了": 28,
-    "キャンセル": 15,
-    "予約確定": 1
+    "キャンセル": 15
   },
   "daily": [
     {
@@ -301,13 +301,20 @@
     },
     {
       "date": "2026-08-20",
-      "registrationsCompleted": 0,
+      "registrationsCompleted": 1,
       "consultationsBooked": 1,
       "consultationsCompleted": 0,
       "consultationsCancelled": 1
     },
     {
       "date": "2026-08-21",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 1,
+      "consultationsCompleted": 0,
+      "consultationsCancelled": 0
+    },
+    {
+      "date": "2026-08-27",
       "registrationsCompleted": 0,
       "consultationsBooked": 1,
       "consultationsCompleted": 0,

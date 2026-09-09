@@ -2,14 +2,14 @@
   "source": "app",
   "available": true,
   "cancellationTracked": true,
-  "generatedAt": "2026-09-07T23:05:22.084Z",
+  "generatedAt": "2026-09-09T01:04:32.767Z",
   "earliestDate": "2026-05-20",
-  "latestDate": "2026-09-08",
-  "totalSeekers": 53,
+  "latestDate": "2026-09-09",
+  "totalSeekers": 54,
   "statusVocab": {
-    "完了": 37,
+    "完了": 35,
     "予約確定": 1,
-    "キャンセル": 15
+    "キャンセル": 13
   },
   "daily": [
     {
@@ -60,13 +60,6 @@
       "consultationsBooked": 0,
       "consultationsCompleted": 0,
       "consultationsCancelled": 0
-    },
-    {
-      "date": "2026-06-08",
-      "registrationsCompleted": 0,
-      "consultationsBooked": 1,
-      "consultationsCompleted": 0,
-      "consultationsCancelled": 1
     },
     {
       "date": "2026-06-09",
@@ -148,15 +141,15 @@
     {
       "date": "2026-06-22",
       "registrationsCompleted": 1,
-      "consultationsBooked": 2,
+      "consultationsBooked": 1,
       "consultationsCompleted": 1,
-      "consultationsCancelled": 1
+      "consultationsCancelled": 0
     },
     {
       "date": "2026-06-23",
       "registrationsCompleted": 1,
-      "consultationsBooked": 2,
-      "consultationsCompleted": 2,
+      "consultationsBooked": 1,
+      "consultationsCompleted": 1,
       "consultationsCancelled": 0
     },
     {
@@ -211,8 +204,8 @@
     {
       "date": "2026-07-13",
       "registrationsCompleted": 1,
-      "consultationsBooked": 2,
-      "consultationsCompleted": 2,
+      "consultationsBooked": 1,
+      "consultationsCompleted": 1,
       "consultationsCancelled": 0
     },
     {
@@ -381,6 +374,13 @@
       "registrationsCompleted": 0,
       "consultationsBooked": 1,
       "consultationsCompleted": 1,
+      "consultationsCancelled": 0
+    },
+    {
+      "date": "2026-09-09",
+      "registrationsCompleted": 1,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0,
       "consultationsCancelled": 0
     },
     {

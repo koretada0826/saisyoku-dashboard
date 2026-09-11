@@ -2,14 +2,14 @@
   "source": "app",
   "available": true,
   "cancellationTracked": true,
-  "generatedAt": "2026-09-09T23:05:43.779Z",
+  "generatedAt": "2026-09-11T02:21:12.927Z",
   "earliestDate": "2026-05-20",
-  "latestDate": "2026-09-10",
+  "latestDate": "2026-09-11",
   "totalSeekers": 54,
   "statusVocab": {
-    "完了": 37,
-    "予約確定": 1,
-    "キャンセル": 15
+    "予約確定": 2,
+    "完了": 23,
+    "キャンセル": 10
   },
   "daily": [
     {
@@ -155,8 +155,8 @@
     {
       "date": "2026-06-23",
       "registrationsCompleted": 1,
-      "consultationsBooked": 2,
-      "consultationsCompleted": 2,
+      "consultationsBooked": 1,
+      "consultationsCompleted": 1,
       "consultationsCancelled": 0
     },
     {
@@ -169,29 +169,15 @@
     {
       "date": "2026-06-26",
       "registrationsCompleted": 0,
-      "consultationsBooked": 3,
-      "consultationsCompleted": 3,
-      "consultationsCancelled": 0
-    },
-    {
-      "date": "2026-07-03",
-      "registrationsCompleted": 0,
-      "consultationsBooked": 2,
+      "consultationsBooked": 1,
       "consultationsCompleted": 1,
-      "consultationsCancelled": 1
+      "consultationsCancelled": 0
     },
     {
       "date": "2026-07-06",
       "registrationsCompleted": 1,
-      "consultationsBooked": 1,
+      "consultationsBooked": 0,
       "consultationsCompleted": 0,
-      "consultationsCancelled": 1
-    },
-    {
-      "date": "2026-07-08",
-      "registrationsCompleted": 0,
-      "consultationsBooked": 1,
-      "consultationsCompleted": 1,
       "consultationsCancelled": 0
     },
     {
@@ -211,13 +197,6 @@
     {
       "date": "2026-07-13",
       "registrationsCompleted": 1,
-      "consultationsBooked": 2,
-      "consultationsCompleted": 2,
-      "consultationsCancelled": 0
-    },
-    {
-      "date": "2026-07-17",
-      "registrationsCompleted": 0,
       "consultationsBooked": 1,
       "consultationsCompleted": 1,
       "consultationsCancelled": 0
@@ -239,30 +218,23 @@
     {
       "date": "2026-07-30",
       "registrationsCompleted": 4,
-      "consultationsBooked": 2,
-      "consultationsCompleted": 2,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0,
       "consultationsCancelled": 0
     },
     {
       "date": "2026-07-31",
       "registrationsCompleted": 1,
-      "consultationsBooked": 1,
-      "consultationsCompleted": 1,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0,
       "consultationsCancelled": 0
     },
     {
       "date": "2026-08-02",
       "registrationsCompleted": 0,
-      "consultationsBooked": 2,
-      "consultationsCompleted": 1,
-      "consultationsCancelled": 1
-    },
-    {
-      "date": "2026-08-06",
-      "registrationsCompleted": 0,
       "consultationsBooked": 1,
-      "consultationsCompleted": 0,
-      "consultationsCancelled": 1
+      "consultationsCompleted": 1,
+      "consultationsCancelled": 0
     },
     {
       "date": "2026-08-10",
@@ -270,13 +242,6 @@
       "consultationsBooked": 0,
       "consultationsCompleted": 0,
       "consultationsCancelled": 0
-    },
-    {
-      "date": "2026-08-12",
-      "registrationsCompleted": 0,
-      "consultationsBooked": 2,
-      "consultationsCompleted": 1,
-      "consultationsCancelled": 1
     },
     {
       "date": "2026-08-13",
@@ -349,27 +314,6 @@
       "consultationsCancelled": 0
     },
     {
-      "date": "2026-09-01",
-      "registrationsCompleted": 0,
-      "consultationsBooked": 1,
-      "consultationsCompleted": 1,
-      "consultationsCancelled": 0
-    },
-    {
-      "date": "2026-09-04",
-      "registrationsCompleted": 0,
-      "consultationsBooked": 1,
-      "consultationsCompleted": 1,
-      "consultationsCancelled": 0
-    },
-    {
-      "date": "2026-09-05",
-      "registrationsCompleted": 0,
-      "consultationsBooked": 1,
-      "consultationsCompleted": 1,
-      "consultationsCancelled": 0
-    },
-    {
       "date": "2026-09-06",
       "registrationsCompleted": 1,
       "consultationsBooked": 0,
@@ -392,6 +336,13 @@
     },
     {
       "date": "2026-09-13",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 1,
+      "consultationsCompleted": 0,
+      "consultationsCancelled": 0
+    },
+    {
+      "date": "2026-09-14",
       "registrationsCompleted": 0,
       "consultationsBooked": 1,
       "consultationsCompleted": 0,

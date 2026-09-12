@@ -2,8 +2,8 @@
   "source": "ga4",
   "available": true,
   "note": "GA4 Data API / プロパティ542041606 / LP流入=ページパス = \"/\", 登録ボタン押下=/register のsessions(日別)。",
-  "generatedAt": "2026-09-10T23:02:03.225Z",
-  "latestDate": "2026-09-10",
+  "generatedAt": "2026-09-11T23:01:59.234Z",
+  "latestDate": "2026-09-11",
   "earliestDate": "2026-06-18",
   "daily": [
     {
@@ -428,7 +428,12 @@
     },
     {
       "date": "2026-09-10",
-      "lpVisitors": 12,
+      "lpVisitors": 15,
+      "registrationButtonClicks": 0
+    },
+    {
+      "date": "2026-09-11",
+      "lpVisitors": 4,
       "registrationButtonClicks": 0
     }
   ]

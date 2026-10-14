@@ -2,9 +2,9 @@
   "source": "slack",
   "workspace": "才職CAREER",
   "channel": "admin-reservations",
-  "generatedAt": "2026-10-09T23:02:19.600Z",
-  "earliestDate": "2026-07-12",
-  "latestDate": "2026-10-10",
+  "generatedAt": "2026-10-14T14:39:59.879Z",
+  "earliestDate": "2026-07-19",
+  "latestDate": "2026-10-14",
   "availability": {
     "lpVisitors": false,
     "lineVisitors": false,
@@ -134,67 +134,9 @@
       "status": "completed",
       "completedDate": "2026-07-31",
       "cancelledDate": null
-    },
-    {
-      "bookingId": "slk-16",
-      "bookedDate": "2026-07-13",
-      "scheduledDate": "2026-7-13 ",
-      "status": "pending",
-      "completedDate": null,
-      "cancelledDate": null
-    },
-    {
-      "bookingId": "slk-17",
-      "bookedDate": "2026-07-12",
-      "scheduledDate": "2026-7-12 ",
-      "status": "pending",
-      "completedDate": null,
-      "cancelledDate": null
     }
   ],
   "daily": [
-    {
-      "date": "2026-07-12",
-      "registrationsCompleted": 2,
-      "consultationsBooked": 1,
-      "consultationsCompleted": 0
-    },
-    {
-      "date": "2026-07-13",
-      "registrationsCompleted": 1,
-      "consultationsBooked": 1,
-      "consultationsCompleted": 0
-    },
-    {
-      "date": "2026-07-14",
-      "registrationsCompleted": 0,
-      "consultationsBooked": 0,
-      "consultationsCompleted": 0
-    },
-    {
-      "date": "2026-07-15",
-      "registrationsCompleted": 0,
-      "consultationsBooked": 0,
-      "consultationsCompleted": 0
-    },
-    {
-      "date": "2026-07-16",
-      "registrationsCompleted": 0,
-      "consultationsBooked": 0,
-      "consultationsCompleted": 0
-    },
-    {
-      "date": "2026-07-17",
-      "registrationsCompleted": 0,
-      "consultationsBooked": 0,
-      "consultationsCompleted": 0
-    },
-    {
-      "date": "2026-07-18",
-      "registrationsCompleted": 0,
-      "consultationsBooked": 0,
-      "consultationsCompleted": 0
-    },
     {
       "date": "2026-07-19",
       "registrationsCompleted": 2,
@@ -698,11 +640,35 @@
       "registrationsCompleted": 0,
       "consultationsBooked": 0,
       "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-10-11",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-10-12",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-10-13",
+      "registrationsCompleted": 1,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-10-14",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
     }
   ],
   "totals": {
-    "registrations": 27,
-    "booked": 17,
+    "registrations": 25,
+    "booked": 15,
     "completed": 3
   }
 }

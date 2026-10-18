@@ -2,9 +2,9 @@
   "source": "slack",
   "workspace": "才職CAREER",
   "channel": "admin-reservations",
-  "generatedAt": "2026-10-16T23:02:23.187Z",
-  "earliestDate": "2026-07-19",
-  "latestDate": "2026-10-17",
+  "generatedAt": "2026-10-18T23:02:15.161Z",
+  "earliestDate": "2026-07-26",
+  "latestDate": "2026-10-19",
   "availability": {
     "lpVisitors": false,
     "lineVisitors": false,
@@ -145,48 +145,6 @@
     }
   ],
   "daily": [
-    {
-      "date": "2026-07-19",
-      "registrationsCompleted": 1,
-      "consultationsBooked": 0,
-      "consultationsCompleted": 0
-    },
-    {
-      "date": "2026-07-20",
-      "registrationsCompleted": 0,
-      "consultationsBooked": 0,
-      "consultationsCompleted": 0
-    },
-    {
-      "date": "2026-07-21",
-      "registrationsCompleted": 0,
-      "consultationsBooked": 0,
-      "consultationsCompleted": 0
-    },
-    {
-      "date": "2026-07-22",
-      "registrationsCompleted": 0,
-      "consultationsBooked": 0,
-      "consultationsCompleted": 0
-    },
-    {
-      "date": "2026-07-23",
-      "registrationsCompleted": 0,
-      "consultationsBooked": 0,
-      "consultationsCompleted": 0
-    },
-    {
-      "date": "2026-07-24",
-      "registrationsCompleted": 0,
-      "consultationsBooked": 0,
-      "consultationsCompleted": 0
-    },
-    {
-      "date": "2026-07-25",
-      "registrationsCompleted": 0,
-      "consultationsBooked": 0,
-      "consultationsCompleted": 0
-    },
     {
       "date": "2026-07-26",
       "registrationsCompleted": 1,
@@ -690,10 +648,22 @@
       "registrationsCompleted": 0,
       "consultationsBooked": 0,
       "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-10-18",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-10-19",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
     }
   ],
   "totals": {
-    "registrations": 24,
+    "registrations": 23,
     "booked": 16,
     "completed": 3
   }

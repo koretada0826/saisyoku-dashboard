@@ -2,9 +2,9 @@
   "source": "slack",
   "workspace": "才職CAREER",
   "channel": "admin-reservations",
-  "generatedAt": "2026-10-19T23:02:17.122Z",
+  "generatedAt": "2026-10-20T23:00:20.995Z",
   "earliestDate": "2026-07-26",
-  "latestDate": "2026-10-20",
+  "latestDate": "2026-10-21",
   "availability": {
     "lpVisitors": false,
     "lineVisitors": false,
@@ -17,6 +17,14 @@
   "consultations": [
     {
       "bookingId": "slk-1",
+      "bookedDate": "2026-10-20",
+      "scheduledDate": "2026-10-30",
+      "status": "pending",
+      "completedDate": null,
+      "cancelledDate": null
+    },
+    {
+      "bookingId": "slk-2",
       "bookedDate": "2026-10-16",
       "scheduledDate": "2026-10-20",
       "status": "pending",
@@ -24,7 +32,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-2",
+      "bookingId": "slk-3",
       "bookedDate": "2026-10-06",
       "scheduledDate": "2026-10-6 ",
       "status": "pending",
@@ -32,7 +40,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-3",
+      "bookingId": "slk-4",
       "bookedDate": "2026-10-05",
       "scheduledDate": "2026-10-6 ",
       "status": "pending",
@@ -40,7 +48,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-4",
+      "bookingId": "slk-5",
       "bookedDate": "2026-09-10",
       "scheduledDate": "2026-9-14 ",
       "status": "pending",
@@ -48,7 +56,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-5",
+      "bookingId": "slk-6",
       "bookedDate": "2026-08-22",
       "scheduledDate": "2026-8-22 ",
       "status": "pending",
@@ -56,7 +64,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-6",
+      "bookingId": "slk-7",
       "bookedDate": "2026-08-22",
       "scheduledDate": "2026-8-24 ",
       "status": "pending",
@@ -64,7 +72,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-7",
+      "bookingId": "slk-8",
       "bookedDate": "2026-08-20",
       "scheduledDate": "2026-8-27 ",
       "status": "pending",
@@ -72,7 +80,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-8",
+      "bookingId": "slk-9",
       "bookedDate": "2026-08-18",
       "scheduledDate": "2026-8-18 ",
       "status": "pending",
@@ -80,7 +88,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-9",
+      "bookingId": "slk-10",
       "bookedDate": "2026-08-16",
       "scheduledDate": "2026-8-18 ",
       "status": "pending",
@@ -88,7 +96,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-10",
+      "bookingId": "slk-11",
       "bookedDate": "2026-08-14",
       "scheduledDate": "2026-8-14 ",
       "status": "pending",
@@ -96,7 +104,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-11",
+      "bookingId": "slk-12",
       "bookedDate": "2026-08-14",
       "scheduledDate": "2026-8-18 ",
       "status": "pending",
@@ -104,7 +112,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-12",
+      "bookingId": "slk-13",
       "bookedDate": "2026-08-13",
       "scheduledDate": "2026-8-21 ",
       "status": "pending",
@@ -112,7 +120,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-13",
+      "bookingId": "slk-14",
       "bookedDate": "2026-08-13",
       "scheduledDate": "2026-8-20 ",
       "status": "pending",
@@ -120,7 +128,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-14",
+      "bookingId": "slk-15",
       "bookedDate": "2026-07-31",
       "scheduledDate": "2026-8-2 2",
       "status": "completed",
@@ -128,7 +136,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-15",
+      "bookingId": "slk-16",
       "bookedDate": "2026-07-30",
       "scheduledDate": "2026-7-30 ",
       "status": "completed",
@@ -136,7 +144,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-16",
+      "bookingId": "slk-17",
       "bookedDate": "2026-07-30",
       "scheduledDate": "2026-7-31 ",
       "status": "completed",
@@ -663,14 +671,20 @@
     },
     {
       "date": "2026-10-20",
+      "registrationsCompleted": 1,
+      "consultationsBooked": 1,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-10-21",
       "registrationsCompleted": 0,
       "consultationsBooked": 0,
       "consultationsCompleted": 0
     }
   ],
   "totals": {
-    "registrations": 23,
-    "booked": 16,
+    "registrations": 24,
+    "booked": 17,
     "completed": 3
   }
 }

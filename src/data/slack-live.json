@@ -2,9 +2,9 @@
   "source": "slack",
   "workspace": "才職CAREER",
   "channel": "admin-reservations",
-  "generatedAt": "2026-11-01T23:00:19.327Z",
+  "generatedAt": "2026-11-02T23:00:18.526Z",
   "earliestDate": "2026-08-13",
-  "latestDate": "2026-11-02",
+  "latestDate": "2026-11-03",
   "availability": {
     "lpVisitors": false,
     "lineVisitors": false,
@@ -617,6 +617,12 @@
     },
     {
       "date": "2026-11-02",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-11-03",
       "registrationsCompleted": 0,
       "consultationsBooked": 0,
       "consultationsCompleted": 0

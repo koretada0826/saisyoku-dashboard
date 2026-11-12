@@ -2,9 +2,9 @@
   "source": "slack",
   "workspace": "才職CAREER",
   "channel": "admin-reservations",
-  "generatedAt": "2026-11-11T23:00:18.116Z",
-  "earliestDate": "2026-08-14",
-  "latestDate": "2026-11-12",
+  "generatedAt": "2026-11-12T23:00:18.371Z",
+  "earliestDate": "2026-08-16",
+  "latestDate": "2026-11-13",
   "availability": {
     "lpVisitors": false,
     "lineVisitors": false,
@@ -17,6 +17,14 @@
   "consultations": [
     {
       "bookingId": "slk-1",
+      "bookedDate": "2026-11-12",
+      "scheduledDate": "2026-11-15",
+      "status": "pending",
+      "completedDate": null,
+      "cancelledDate": null
+    },
+    {
+      "bookingId": "slk-2",
       "bookedDate": "2026-10-20",
       "scheduledDate": "2026-10-30",
       "status": "pending",
@@ -24,7 +32,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-2",
+      "bookingId": "slk-3",
       "bookedDate": "2026-10-16",
       "scheduledDate": "2026-10-20",
       "status": "pending",
@@ -32,7 +40,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-3",
+      "bookingId": "slk-4",
       "bookedDate": "2026-10-06",
       "scheduledDate": "2026-10-6 ",
       "status": "pending",
@@ -40,7 +48,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-4",
+      "bookingId": "slk-5",
       "bookedDate": "2026-10-05",
       "scheduledDate": "2026-10-6 ",
       "status": "pending",
@@ -48,7 +56,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-5",
+      "bookingId": "slk-6",
       "bookedDate": "2026-09-10",
       "scheduledDate": "2026-9-14 ",
       "status": "pending",
@@ -56,7 +64,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-6",
+      "bookingId": "slk-7",
       "bookedDate": "2026-08-22",
       "scheduledDate": "2026-8-22 ",
       "status": "pending",
@@ -64,7 +72,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-7",
+      "bookingId": "slk-8",
       "bookedDate": "2026-08-22",
       "scheduledDate": "2026-8-24 ",
       "status": "pending",
@@ -72,7 +80,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-8",
+      "bookingId": "slk-9",
       "bookedDate": "2026-08-20",
       "scheduledDate": "2026-8-27 ",
       "status": "pending",
@@ -80,7 +88,7 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-9",
+      "bookingId": "slk-10",
       "bookedDate": "2026-08-18",
       "scheduledDate": "2026-8-18 ",
       "status": "pending",
@@ -88,24 +96,8 @@
       "cancelledDate": null
     },
     {
-      "bookingId": "slk-10",
-      "bookedDate": "2026-08-16",
-      "scheduledDate": "2026-8-18 ",
-      "status": "pending",
-      "completedDate": null,
-      "cancelledDate": null
-    },
-    {
       "bookingId": "slk-11",
-      "bookedDate": "2026-08-14",
-      "scheduledDate": "2026-8-14 ",
-      "status": "pending",
-      "completedDate": null,
-      "cancelledDate": null
-    },
-    {
-      "bookingId": "slk-12",
-      "bookedDate": "2026-08-14",
+      "bookedDate": "2026-08-16",
       "scheduledDate": "2026-8-18 ",
       "status": "pending",
       "completedDate": null,
@@ -113,18 +105,6 @@
     }
   ],
   "daily": [
-    {
-      "date": "2026-08-14",
-      "registrationsCompleted": 2,
-      "consultationsBooked": 2,
-      "consultationsCompleted": 0
-    },
-    {
-      "date": "2026-08-15",
-      "registrationsCompleted": 0,
-      "consultationsBooked": 0,
-      "consultationsCompleted": 0
-    },
     {
       "date": "2026-08-16",
       "registrationsCompleted": 0,
@@ -655,14 +635,20 @@
     },
     {
       "date": "2026-11-12",
+      "registrationsCompleted": 1,
+      "consultationsBooked": 1,
+      "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-11-13",
       "registrationsCompleted": 0,
       "consultationsBooked": 0,
       "consultationsCompleted": 0
     }
   ],
   "totals": {
-    "registrations": 16,
-    "booked": 12,
+    "registrations": 15,
+    "booked": 11,
     "completed": 0
   }
 }

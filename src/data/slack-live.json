@@ -2,9 +2,9 @@
   "source": "slack",
   "workspace": "才職CAREER",
   "channel": "admin-reservations",
-  "generatedAt": "2026-11-19T23:00:19.922Z",
-  "earliestDate": "2026-08-22",
-  "latestDate": "2026-11-20",
+  "generatedAt": "2026-11-20T23:00:13.489Z",
+  "earliestDate": "2026-08-23",
+  "latestDate": "2026-11-21",
   "availability": {
     "lpVisitors": false,
     "lineVisitors": false,
@@ -62,31 +62,9 @@
       "status": "pending",
       "completedDate": null,
       "cancelledDate": null
-    },
-    {
-      "bookingId": "slk-7",
-      "bookedDate": "2026-08-22",
-      "scheduledDate": "2026-8-22 ",
-      "status": "pending",
-      "completedDate": null,
-      "cancelledDate": null
-    },
-    {
-      "bookingId": "slk-8",
-      "bookedDate": "2026-08-22",
-      "scheduledDate": "2026-8-24 ",
-      "status": "pending",
-      "completedDate": null,
-      "cancelledDate": null
     }
   ],
   "daily": [
-    {
-      "date": "2026-08-22",
-      "registrationsCompleted": 2,
-      "consultationsBooked": 2,
-      "consultationsCompleted": 0
-    },
     {
       "date": "2026-08-23",
       "registrationsCompleted": 1,
@@ -626,11 +604,17 @@
       "registrationsCompleted": 0,
       "consultationsBooked": 0,
       "consultationsCompleted": 0
+    },
+    {
+      "date": "2026-11-21",
+      "registrationsCompleted": 0,
+      "consultationsBooked": 0,
+      "consultationsCompleted": 0
     }
   ],
   "totals": {
-    "registrations": 17,
-    "booked": 8,
+    "registrations": 15,
+    "booked": 6,
     "completed": 0
   }
 }
